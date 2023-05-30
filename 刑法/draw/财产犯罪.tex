@@ -1,0 +1,40 @@
+\centering
+\begin{forest}
+  arrow to/.style n args=4{%
+    delay={%
+      tikz+={%
+        \draw [every edge, line] () -- (!#1) node [above, midway] {#2};
+      },
+    },
+  },
+  for tree={
+    grow'=east,
+    edge={line},
+    font=\small
+  }
+  [财产犯罪
+    [非法占有目的
+      [取得型犯罪
+        [转移占有吗
+          [转移，谁
+            [犯罪人
+              [暴力程度
+                [抢劫罪]
+                [抢夺罪]
+                [盗窃罪]
+              ]
+            ]
+            [被害人
+              [诈骗罪]
+              [敲诈勒索罪]
+            ]
+          ]
+          [不转移
+            [侵占罪]
+          ]
+        ]
+      ]
+      [故意毁坏财物罪]
+    ]
+  ]
+\end{forest}

@@ -1,0 +1,5 @@
+*.md
+main.*
+!main.tex
+*.log
+dist

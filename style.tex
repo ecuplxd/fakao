@@ -1,0 +1,103 @@
+\documentclass[openany]{ctexbook}
+\usepackage[a4paper, twoside=false, includemp]{geometry}
+\geometry{left=1cm, right=0.1cm, bottom=1.6cm, top=1.6cm, marginparwidth=36pt}
+\usepackage[notindex]{tocbibind}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+% \usepackage{tikz-qtree}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[edges]{forest}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathmorphing}
+\tikzset{
+	line/.style={draw, -Stealth},
+}
+\tikzset{curve/.style={settings={#1},to path={(\tikztostart)
+					.. controls ($(\tikztostart)!\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
+					and ($(\tikztostart)!1-\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
+					.. (\tikztotarget)\tikztonodes}},
+	settings/.code={\tikzset{quiver/.cd,#1}
+			\def\pv##1{\pgfkeysvalueof{/tikz/quiver/##1}}},
+	quiver/.cd,pos/.initial=0.35,height/.initial=0}
+\tikzset{tail reversed/.code={\pgfsetarrowsstart{tikzcd to}}}
+\tikzset{2tail/.code={\pgfsetarrowsstart{Implies[reversed]}}}
+\tikzset{2tail reversed/.code={\pgfsetarrowsstart{Implies}}}
+\tikzset{no body/.style={/tikz/dash pattern=on 0 off 1mm}}
+\usepackage[all, pdf]{xy}
+\usepackage{imakeidx}
+\makeindex[
+	intoc=true,
+	columns=1
+]
+\usepackage{xcolor}
+\usepackage{layout}
+\definecolor{mygreen}{RGB}{3,143,94}
+\usepackage{nameref}
+\usepackage[bookmarksopen=true]{hyperref}
+\hypersetup{
+	colorlinks,
+	% bookmarksnumbered,
+	pdftitle={法考},
+	pdfauthor={制作者：小兑},
+	pdfsubject={法考},
+	pdfkeywords={法考}
+}
+\usepackage{marginnote}
+\renewcommand*{\marginfont}{\scriptsize}
+\usepackage{bookmark}
+\usepackage{paracol}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\tcbuselibrary{breakable}
+\newtcolorbox{kk}[2][]{
+	enhanced,
+	% breakable,
+	boxed title size=copy,
+	left=4pt,
+	right=4pt,
+	before skip=6pt,
+	after skip=8pt,
+	arc=0pt,
+	boxrule=.5pt, % border
+	coltitle=white, % 标题颜色
+	colbacktitle=mygreen, % 标题框背景色
+	colframe=mygreen, % 线框颜色
+	colback=white, % 框背景色
+	fonttitle=\bfseries,
+	attach boxed title to top left,
+	title={#2},#1}
+\usepackage{enumitem}
+\setlist{nosep}
+\usepackage{xeCJKfntef}
+\newcommand\xhx[1]{\CJKunderline*{#1}} % 下划线
+\newcommand\sxhx[1]{\CJKunderdblline*{#1}} % 双下划线
+\newcommand\blx[1]{\CJKunderwave*{#1}} % 波浪线
+\newcommand\scx[1]{\CJKsout*{#1}} % 删除线
+\newcommand\jd[1]{\CJKunderdot{#1}} % 点线
+
+\newcommand\bt[1]{\colorbox{mygreen}{\textcolor{white}{\bfseries#1}}} % 标题
+\newcommand\hzi[1]{\textcolor{magenta}{#1}}
+\newcommand\zd[1]{\CJKunderline*[textformat=\color{mygreen}]{#1}} % 带下划线的重点
+\newcommand\qd[1]{\textcolor{mygreen}{#1}} % 强调
+\newcommand\al[1]{\hzi{\fangsong{#1}}} % 案例
+
+\newcommand\sy[1]{{#1}\index{#1}} % 索引
+\newcommand\bq[1]{{#1}\label{#1}\index{#1}} % 标签
+\newcommand\yy[1]{{#1}\ref{#1}} % 引用
+\newcommand\tz[1]{\hyperref[#1]{#1}} % 跳转
+
+\newcommand\yjt{\textbf{→}} % 右箭头
+\newcommand\sjt{\textbf{↑}} % 上箭头
+\newcommand\xjt{\textbf{↓}} % 下箭头
+\newcommand\blh{\textasciitilde} % 波浪号
+\newcommand\ydy{$ \approx $} % 约等于
+\newcommand\bdy{$ \neq $} % 不等于
+\newcommand\hz{||} % 或者
+
+\usepackage{pifont}
+\newcommand\yi{\mbox{\raisebox{-0.15ex}{\qd{\ding{172}}\,}}} % 圆圈 1 - 4
+\newcommand\er{\mbox{\raisebox{-0.15ex}{\qd{\ding{173}}\,}}} %
+\newcommand\san{\mbox{\raisebox{-0.15ex}{\qd{\ding{174}}\,}}} %
+\newcommand\si{\mbox{\raisebox{-0.15ex}{\qd{\ding{175}}\,}}} %
