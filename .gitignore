@@ -3,3 +3,4 @@ main.*
 !main.tex
 *.log
 dist
+*.mp3

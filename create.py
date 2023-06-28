@@ -2,8 +2,14 @@
 import os
 import unicodedata
 import shutil
+import PyPDF2
+import edge_tts
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
 
+executor = ThreadPoolExecutor(20)
 subjects = ['刑法', '刑诉', '民法', '民诉', '行政法', '商经知', '三国法', '理论法']
+# subjects = ['三国法']
 sections = [
     '法的本体',
     '法的运行',
@@ -24,6 +30,50 @@ sections = [
     '律师制度和律师职业道德',
     '法律援助和公证制度',
 ]
+voice = 'zh-CN-YunyangNeural'
+rate = '+0%'
+volume = '+0%'
+cwd = os.getcwd()
+
+
+async def my_function(output, text):
+    output = output.replace('.pdf', '.mp3').replace('_', '')
+    if not os.path.exists(output):
+        tts = edge_tts.Communicate(
+            text=text, voice=voice, rate=rate, volume=volume)
+        await tts.save(output)
+
+
+def to_tts(pdf_path):
+    pdf_file_obj = open(pdf_path, 'rb')
+    pdf_reader = PyPDF2.PdfReader(pdf_file_obj)
+    page_number = len(pdf_reader.pages)
+    text = ''
+
+    for i in range(page_number):
+        page_obj = pdf_reader.pages[i]
+        text = text + page_obj.extract_text()
+    asyncio.run(my_function(pdf_path, text))
+
+
+def create_each_file(dist, file, lines):
+    if file != "main.tex":
+        output = os.path.join(dist, '_' + file)
+        with open(output, encoding='utf-8', mode='w+') as f_full:
+            full_code = '''\input{../../style.tex}
+\pagestyle{empty}
+\\begin{document}
+%s
+\end{document}''' % (lines.replace('section{', 'section*{'))
+            f_full.write(full_code)
+            return output
+
+
+def compile_tex(tex_file):
+    os.chdir(os.path.join(cwd, os.path.dirname(tex_file)))
+    os.system('xelatex --interaction=batchmode "' +
+              os.path.basename(tex_file) + '"')
+    print('done', tex_file)
 
 
 def create_main(name, sections):
@@ -62,7 +112,8 @@ def is_chinese(char):
 
 
 def filter_tex_file(folder):
-    files = [file for file in os.listdir(folder) if file.endswith('.tex')]
+    files = [file for file in os.listdir(folder) if file.endswith(
+        '.tex') and not file.startswith('_')]
 
     return files
 
@@ -103,6 +154,7 @@ def merge():
 '''
 
     ]
+    outputs = []
 
     for subject in subjects:
         dist = os.path.join('dist', subject)
@@ -115,6 +167,7 @@ def merge():
                 lines = lines.replace('draw/', '../' + subject + '/draw/')
                 f.seek(0)
                 f.writelines(lines)
+                outputs.append(create_each_file(dist, file, lines))
 
         code.append('\part{' + subject + '}\n')
 
@@ -128,6 +181,33 @@ def merge():
     with open('dist/main.tex', encoding='utf-8', mode='w+') as f:
         f.writelines(code)
 
+    for output in outputs:
+        if not output:
+            continue
+        executor.submit(compile_tex, output)
+
+
+def clean_up():
+    for root, dirs, files in os.walk('./dist'):
+        if dirs == ['draw']:
+            os.removedirs(os.path.join(root, 'draw'))
+            continue
+
+        for f in files:
+            f_path = os.path.join(root, f)
+
+            if '.pdf' in f:
+                os.rename(f_path, f_path.replace('_', ''))
+                continue
+            if '.mp3' in f:
+                continue
+            # if '.tex' in f and not f.startswith('_'):
+            #     continue
+            else:
+                os.remove(f_path)
+
 
 if __name__ == "__main__":
-    merge()
+    # merge()
+    # executor.shutdown()
+    clean_up()
