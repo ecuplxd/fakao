@@ -1,18 +1,13 @@
-% https://q.uiver.app/#q=WzAsMTIsWzAsMSwi6KOB5a6a5Lit5q2iIl0sWzEsNCwi5omn6KGM5byC6K6u5LmL6K+JXFxcXO+8iOehruiupOS5i+ivie+8iSJdLFsxLDAsIuahiOWkluS6uuWvueaJp+ihjOagh+eahOeahOW8guiuriJdLFsyLDEsIumps+WbniJdLFswLDUsIueUs+ivt+S6uiJdLFsyLDUsIuesrOS4ieS6uiJdLFsyLDcsIuahiOWkluS6uuW8guiuruS5i+iviVxcXFzvvIjnp6/mnoHnmoTnoa7orqTkuYvor4nvvIkiXSxbMCw3LCLorrjlj6/miafooYzkuYvor4kv55Sz6K+35Lq65omn6KGM5byC6K6u5LmL6K+JXFxcXO+8iOa2iOaegeeahOehruiupOS5i+ivie+8iSJdLFsxLDIsIuWIpOaJpyJdLFszLDIsIuWGjeWuoSJdLFszLDAsIuS4ieaSpOeri+azleWkquaZmlxcXFzlj6rog73lho3lrqEiXSxbMSw3LCLooqvmiafooYzkuroiXSxbMSw0XSxbMSw1XSxbNSw2LCLku6XnlLPor7fkurrkuLrooqvlkYoiLDFdLFs0LDcsIuS7peesrOS4ieS6uuS4uuiiq+WRiiIsMV0sWzIsMCwi5oiQ56uLIiwxXSxbMiwzLCLkuI3miJDnq4siLDFdLFswLDhdLFszLDhdLFs4LDksIuS4gOiHtO+8iOWOn+WIpOacieivr++8iSIsMV0sWzgsMSwi5LiN5LiA6Ie077yI5LiO5Y6f5Yik5peg5YWz77yJIiwxXSxbOSwxMF0sWzExLDEsIuWPjeWvue+8jOWFseWQjOiiq+WRiiIsMyx7Im9mZnNldCI6LTV9XSxbMTEsMSwi5ZCM5oSP77yM5peg54us5LiJIiwzLHsib2Zmc2V0Ijo1fV1d
+% https://q.uiver.app/#q=WzAsMTAsWzAsMSwi6KOB5a6a5Lit5q2iIl0sWzEsNCwi5omn6KGM5byC6K6u5LmL6K+JXFxcXO+8iOehruiupOS5i+ivie+8iSJdLFsxLDAsIuahiOWkluS6uuWvueaJp+ihjOagh+eahOeahOW8guiuriJdLFsyLDEsIumps+WbniJdLFswLDYsIueUs+ivt+S6uiJdLFszLDYsIuesrOS4ieS6uiJdLFsxLDIsIuWIpOaJpyJdLFszLDIsIuWGjeWuoSJdLFszLDAsIuS4ieaSpOeri+azleWkquaZmlxcXFzlj6rog73lho3lrqEiXSxbMyw0LCLooqvmiafooYzkuroiXSxbMiwwLCLmiJDnq4siLDFdLFsyLDMsIuS4jeaIkOeriyIsMV0sWzAsNl0sWzMsNl0sWzYsNywi5LiA6Ie077yI5Y6f5Yik5pyJ6K+v77yJIiwxXSxbNiwxLCLkuI3kuIDoh7TvvIjkuI7ljp/liKTml6DlhbPvvIkiLDFdLFs3LDhdLFs5LDEsIuS4jeWPjeWvue+8jOaXoOeLrOS4iSIsMl0sWzQsNSwi6K645Y+v5omn6KGM5LmL6K+JL+eUs+ivt+S6uuaJp+ihjOW8guiuruS5i+ivie+8iOa2iO+8iSIsMCx7Im9mZnNldCI6LTF9XSxbNSw0LCLmoYjlpJbkurrlvILorq7kuYvor4nvvIjnp6/vvIkiLDAseyJvZmZzZXQiOi0xfV0sWzEsNV0sWzEsNF0sWzksMSwi5Y+N5a+577yM5YWx5ZCM6KKr5ZGKIl1d
 \[
-  \begin{tikzcd}[column sep=tiny]
+  \begin{tikzcd}
     & \txt{案外人对执行标的的异议} && \txt{三撤立法太晚\\只能再审} \\
     \txt{裁定中止} && \txt{驳回} \\
     & \txt{判执} && \txt{再审} \\
     \\
-    & \txt{执行异议之诉\\（确认之诉）} \\
-    \txt{申请人} && \txt{第三人} \\
+    & \txt{执行异议之诉\\（确认之诉）} && \txt{被执行人} \\
     \\
-    \txt{许可执行之诉/申请人执行异议之诉\\（消极的确认之诉）} & \txt{被执行人} & \txt{案外人异议之诉\\（积极的确认之诉）}
-    \arrow[from=5-2, to=6-1]
-    \arrow[from=5-2, to=6-3]
-    \arrow["\txt{以申请人为被告}"{description}, from=6-3, to=8-3]
-    \arrow["\txt{以第三人为被告}"{description}, from=6-1, to=8-1]
+    \txt{申请人} &&& \txt{第三人}
     \arrow["\txt{成立}"{description}, from=1-2, to=2-1]
     \arrow["\txt{不成立}"{description}, from=1-2, to=2-3]
     \arrow[from=2-1, to=3-2]
@@ -20,7 +15,11 @@
     \arrow["\txt{一致（原判有误）}"{description}, from=3-2, to=3-4]
     \arrow["\txt{不一致（与原判无关）}"{description}, from=3-2, to=5-2]
     \arrow[from=3-4, to=1-4]
-    \arrow["\txt{反对，共同被告\\\\\\}"{marking}, shift left=5, from=8-2, to=5-2]
-    \arrow["\txt{\\\\同意，无独三}"{marking}, shift right=5, from=8-2, to=5-2]
+    \arrow["\txt{不反对，无独三}"', from=5-4, to=5-2]
+    \arrow["\txt{许可执行之诉/申请人执行异议之诉（消）}", shift left=1, from=7-1, to=7-4]
+    \arrow["\txt{案外人异议之诉（积）}", shift left=1, from=7-4, to=7-1]
+    \arrow[from=5-2, to=7-4]
+    \arrow[from=5-2, to=7-1]
+    \arrow["\txt{反对，共同被告}", from=5-4, to=5-2]
   \end{tikzcd}
 \]
