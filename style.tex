@@ -8,6 +8,7 @@
 % \usepackage{tikz-qtree}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{multirow}
 \usepackage[edges]{forest}
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{calc}
@@ -78,7 +79,8 @@
 \newcommand\scx[1]{\CJKsout*{#1}} % 删除线
 \newcommand\jd[1]{\CJKunderdot{#1}} % 点线
 
-\newcommand\bt[1]{\colorbox{mygreen}{\textcolor{white}{\bfseries#1}}} % 标题
+\setlength{\fboxsep}{1pt}
+\newcommand\kd[1]{\fcolorbox{mygreen}{white}{\textcolor{mygreen}{#1}}} % 标题
 \newcommand\hzi[1]{\textcolor{magenta}{#1}}
 \newcommand\zd[1]{\CJKunderline*[textformat=\color{mygreen}]{#1}} % 带下划线的重点
 \newcommand\qd[1]{\textcolor{mygreen}{#1}} % 强调
