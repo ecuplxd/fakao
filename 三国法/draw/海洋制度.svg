@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="海洋制度.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.2373948"
+     inkscape:cx="561.25984"
+     inkscape:cy="560.85577"
+     inkscape:window-width="1916"
+     inkscape:window-height="2041"
+     inkscape:window-x="-9"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7" />
+    </marker>
+    <rect
+       x="94.541245"
+       y="420.3934"
+       width="172.69534"
+       height="83.826569"
+       id="rect2" />
+  </defs>
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text2"
+       style="font-size:24px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;shape-inside:url(#rect2);display:inline" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 19.885529,78.473 c 0.285097,0 0.572396,-0.03536 0.855292,0 0.291602,0.03645 0.567126,0.156192 0.855291,0.213823 0.261862,0.05237 1.042813,0 1.282937,0 0.142549,0 0.289354,-0.03457 0.427646,0 0.154616,0.03866 0.281158,0.151043 0.427646,0.213823 0.35279,0.151196 0.700059,0.322202 1.069114,0.427646 0.137064,0.03916 0.309039,-0.07907 0.427646,0 0.132608,0.0884 0.08122,0.339241 0.213823,0.427646 0.118608,0.07907 0.300147,-0.06375 0.427646,0 0.06375,0.03187 -0.03954,0.154519 0,0.213823 0.111824,0.167738 0.259909,0.315823 0.427646,0.427646 0.0593,0.03954 0.154519,-0.03954 0.213822,0 0.167738,0.111824 0.272778,0.298588 0.427646,0.427646 0.273773,0.228142 0.603298,0.389475 0.855292,0.641469 0.251992,0.251992 0.458116,0.549704 0.64147,0.855292 0.03667,0.06112 -0.06375,0.181946 0,0.213823 0.127497,0.06375 0.285096,0 0.427646,0 0.07127,0 0.154516,-0.03954 0.21382,0 0.167738,0.111824 0.285099,0.285097 0.427646,0.427644 0.14255,0.142549 0.315823,0.259911 0.427646,0.427646 0.03954,0.0593 -0.0504,0.163425 0,0.213823 0.213823,0.142549 0.427646,0.285099 0.641469,0.427646 0,0.142549 -0.100796,0.32685 0,0.427646 0.100798,0.100798 0.338598,-0.11131 0.427646,0 0.239773,0.299717 0.230169,0.739989 0.427646,1.069115 0.03667,0.06112 0.147646,-0.02647 0.213823,0 0.29595,0.11838 0.576654,0.272846 0.855292,0.427646 0.564618,0.313677 2.087124,1.297281 2.565874,1.496759 0.335473,0.139782 0.735071,0.07066 1.069115,0.213823 0.185293,0.07941 0.247335,0.337491 0.427646,0.427646 0.06375,0.03187 -0.03187,-0.150072 0,-0.213823 0.185859,-0.371722 0.421203,-0.716688 0.641469,-1.069113 0.249566,-0.399306 0.956241,-1.371968 1.069112,-1.710584 0.09016,-0.270468 0,-0.570196 0,-0.855292 0,-0.477888 0.03849,-1.034878 0,-1.496761 -0.04772,-0.572646 -0.1661,-1.137936 -0.213823,-1.710582 -0.04143,-0.497197 0,-0.997841 0,-1.496761 0,-0.35637 0,-0.712742 0,-1.069115 0,-0.285096 -0.04032,-0.573058 0,-0.855289 0.135367,-0.947563 0.181645,-0.379376 0.641469,-1.069115 0.03954,-0.0593 -0.0504,-0.163426 0,-0.213824 0.0504,-0.0504 0.202108,0.07031 0.213823,0 0.07031,-0.421827 -0.09277,-0.865475 0,-1.282938 0.05575,-0.250862 0.312719,-0.411615 0.427647,-0.641469 0.171651,-0.343302 0.187872,-0.769397 0.427646,-1.069112 0.142549,-0.178186 0.463282,0.08909 0.641469,0 0.371721,-0.185862 0.68712,-0.477758 1.069115,-0.641469 0.131021,-0.05615 0.285096,0 0.427646,0 0.142547,0 0.285096,0 0.427646,0 0.142547,0 0.309036,-0.07907 0.427643,0 0.132609,0.08841 0.14255,0.285096 0.213823,0.427646 0.285099,0 0.600295,-0.1275 0.855292,0 0.08553,0.04276 -0.04276,0.513175 0,0.641466 0.0504,0.151196 0.14255,0.285099 0.213823,0.427646 0.14255,0.14255 0.352777,0.240472 0.427646,0.427646 0.03984,0.0996 -0.0467,1.450057 0,1.496761 0.100799,0.100796 0.300146,-0.06375 0.427646,0 0.06375,0.03187 0,0.14255 0,0.213823 0,0.35637 -0.0979,0.726454 0,1.069116 0.05538,0.193836 0.33749,0.247332 0.427646,0.427646 0.06375,0.127497 -0.03457,0.289351 0,0.427643 0.103778,0.415113 0.488175,0.685879 0.641469,1.069115 0.05294,0.132353 -0.07907,0.309039 0,0.427646 0.08841,0.132607 0.368457,0.06585 0.427646,0.213823 0,0.285097 0,0.570196 0,0.855292 0.07127,0 0.181946,-0.06375 0.213823,0 0.106358,0.212717 -0.0846,0.59917 0,0.641469 0.157473,0.07874 1.267844,-0.07631 1.496759,0 0.668197,0.222732 0.877565,0.280641 1.069115,0.855292 0.02254,0.06762 -0.03954,0.154517 0,0.213823 0.111824,0.167736 0.30171,0.270227 0.427646,0.427644 0.160536,0.20067 0.24593,0.459756 0.427646,0.641469 0.0504,0.0504 0.196535,-0.06915 0.213823,0 0.06915,0.276585 -0.1275,0.600294 0,0.855292 0.06545,0.130897 0.604057,-0.100494 0.855292,0 0.238601,0.09544 0.459753,0.24593 0.641467,0.427646 0.275378,0.275378 -0.550754,0.447085 0,-0.213823 0.292166,-0.350599 0.697746,-0.590026 1.069115,-0.855292 0.129688,-0.09263 0.339241,-0.08121 0.427646,-0.213823 0.07907,-0.118608 -0.08553,-0.313606 0,-0.427646 0.154191,-0.205587 0.459753,-0.24593 0.641469,-0.427646 0.0504,-0.0504 0,-0.142547 0,-0.213821 0.142549,-0.142549 0.259908,-0.315822 0.427646,-0.427646 0.265213,-0.17681 0.581967,-0.263652 0.855292,-0.427646 0.08643,-0.05186 0.118197,-0.181948 0.213823,-0.213823 0.103881,-0.03463 1.278456,0 1.496758,0 0.14255,0 0.2851,0 0.427646,0 0.14255,0 0.326851,-0.100798 0.427647,0 0.100798,0.100796 -0.06375,0.300146 0,0.427646 0.05905,0.118097 0.474456,-0.167013 0.641469,0 0.100795,0.100796 -0.100799,0.326848 0,0.427646 0.100795,0.100796 0.300146,-0.06375 0.427646,0 0.06375,0.03187 -0.03187,0.150072 0,0.213823 0.185859,0.371721 0.371001,0.753568 0.641469,1.069113 0.16724,0.195117 0.487277,0.222059 0.641469,0.427646 0.171058,0.228079 -0.158144,0.618077 0,0.855292 0.0884,0.132606 0.30521,0.111794 0.427643,0.213823 0.30974,0.258114 0.570196,0.570193 0.855292,0.855292 0.213823,0.213823 0.506235,0.371001 0.641469,0.641469 0.06375,0.127497 -0.100795,0.326848 0,0.427646 0.100799,0.100796 0.326848,-0.100798 0.427646,0 0.100799,0.100796 -0.05005,0.294172 0,0.427644 0.167881,0.44768 0.390885,0.875741 0.641469,1.282938 0.321337,0.522173 0.739942,0.97949 1.069115,1.496761 0.171128,0.268914 0.202256,0.629901 0.427646,0.855292 0.100796,0.100795 0.300146,-0.06375 0.427644,0 0.06375,0.03187 -0.02254,0.146206 0,0.213823 0.09695,0.290854 0.363,0.716055 0.641469,0.855289 0.1275,0.06375 0.292412,-0.04508 0.427646,0 0.09563,0.03188 0.1182,0.181949 0.213823,0.213823 0.270468,0.09016 0.590587,-0.105881 0.855292,0 0.238604,0.09544 0.392157,0.365318 0.641469,0.427646 0.345731,0.08643 0.718492,-0.06375 1.069115,0 0.443505,0.08064 0.842891,0.329859 1.282936,0.427646 0.208732,0.04638 0.427646,0 0.641469,0 0.142549,0 0.285096,0 0.427646,0 0.855292,0 1.710584,0 2.565873,0 1.425488,0 2.850973,0 4.276461,0 0.641466,0 1.282935,0 1.924404,0 0.427646,0 0.86111,-0.07031 1.282938,0 0.444646,0.07411 0.849503,0.303808 1.282938,0.427646 0.06853,0.01958 0.142547,0 0.213821,0 0.142549,0 0.285099,0 0.427646,0 0.641469,0 1.285155,-0.05327 1.924407,0 0.362172,0.03018 0.708491,0.168746 1.069115,0.213823 0.212172,0.02652 0.442939,-0.07941 0.641469,0 0.187174,0.07487 0.233807,0.372264 0.427643,0.427646 0.342662,0.0979 0.712746,0 1.069116,0 0.213823,0 0.427646,0 0.641469,0 1.332915,0 2.803861,-0.100703 4.062634,0 0.724543,0.05796 1.414645,0.358733 2.138231,0.427646 3.775514,0 0.951952,-0.09724 4.062634,0.213823 0.348152,0.03481 0.718497,0 1.069118,0 0.99784,0 1.99568,0 2.99352,0 0.99784,0 1.99886,-0.07957 2.99352,0 4.1733,0.333862 1.03625,0.131594 3.20734,0.855293 0.13523,0.04508 0.2851,0 0.42765,0 1.21166,0 2.42332,0 3.63499,0 1.21166,0 2.42332,0 3.63499,0 0.55226,0 1.17908,-0.05906 1.71058,0 0.29207,0.03245 0.56713,0.156188 0.85529,0.213823 0.0699,0.01397 0.14255,0 0.21382,0 0.64147,0 1.28294,0 1.92441,0 0.85529,0 1.71058,0 2.56587,0 0.99784,0 1.99913,-0.08287 2.99352,0 2.59526,0.21627 1.63553,0.397623 3.84882,1.282935 0.13235,0.05294 0.30014,-0.06375 0.42764,0 0.0637,0.03187 -0.0637,0.181949 0,0.213823 0.21382,0.106913 0.42765,-0.05346 0.64147,0 0.50339,0.125849 1.00911,0.250322 1.49676,0.427646 0.2851,0.14255 0.5702,0.285097 0.85529,0.427646 0,0.07127 -0.0504,0.163425 0,0.213823 0.0504,0.0504 0.14765,-0.02647 0.21383,0 0.29594,0.11838 0.5488,0.34008 0.85529,0.427646 0.20559,0.05874 0.44294,-0.07941 0.64146,0 0.18718,0.07487 0.24734,0.337489 0.42765,0.427646 0.1275,0.06375 0.2851,0 0.42765,0 0.57019,0.213823 1.17326,0.354894 1.71058,0.641465 0.54099,0.28853 0.96716,0.76018 1.49676,1.06912 0.33154,0.1934 0.7694,0.18787 1.06911,0.42764 0.11132,0.0891 -0.10079,0.32685 0,0.42765 0.1008,0.1008 0.30015,-0.0637 0.42765,0 0.0637,0.0319 -0.0225,0.1462 0,0.21382 0.0504,0.1512 0.11179,0.30521 0.21382,0.42765 0.25812,0.30973 0.60776,0.53703 0.85529,0.85529 0.25516,0.32805 0.3476,0.77524 0.64147,1.06912 0.29387,0.29387 0.7911,0.33255 1.06912,0.64146 0.38441,0.42712 0.52576,1.02601 0.85529,1.49676 0.40462,0.57804 1.08665,0.92261 1.49676,1.49676 0.131,0.18341 0.0979,0.4482 0.21382,0.64147 0.16788,0.2798 0.68742,0.5755 0.85529,0.85529 0.11597,0.19327 0.0695,0.46832 0.21383,0.64147 0.22814,0.27377 0.5653,0.43433 0.85529,0.64147 0.20911,0.14937 0.48728,0.22206 0.64147,0.42765 0.17105,0.22808 -0.10589,0.59058 0,0.85529 0.30851,0.77129 0.58348,0.60306 1.06911,1.28294 0.14255,0.28509 0.2851,0.57019 0.42765,0.85529 0,0.21382 -0.0956,0.45022 0,0.64146 0.2041,0.4082 0.59357,0.69524 0.85529,1.06912 0.23833,0.34047 0.45561,0.69739 0.64147,1.06912 0.24275,0.4855 0.30821,1.06829 0.64147,1.49675 0.19569,0.25161 0.6299,0.20226 0.85529,0.42765 0.10079,0.1008 -0.1008,0.32685 0,0.42765 0.10079,0.10079 0.34857,-0.11861 0.42764,0 0.11861,0.17791 -0.12428,0.46747 0,0.64146 0.90695,1.26973 1.12098,0.47952 2.13823,1.49677 0.29387,0.29387 0.3476,0.77524 0.64147,1.06911 0.0559,0.0559 0.97321,-0.0639 1.06911,0 0.68975,0.45983 0.12156,0.5061 1.06912,0.64147 0.28223,0.0403 0.57019,0 0.85529,0 0.49892,0.14255 0.99337,0.3018 1.49676,0.42764 0.0691,0.0173 0.18195,-0.0637 0.21383,0 0.0637,0.1275 -0.1008,0.32685 0,0.42765 0.10079,0.1008 0.28509,0 0.42764,0 0.85529,0 1.71512,-0.088 2.56588,0 4.52104,0.4677 2.41143,0.37617 5.77321,1.49676 0.12717,0.0424 1.02144,-0.0477 1.06912,0 0.0504,0.0504 0,0.14255 0,0.21382 0.42764,0 0.86547,-0.0928 1.28293,0 0.25087,0.0557 0.38948,0.37725 0.64147,0.42765 2.47036,0.49407 0.57981,-0.56539 2.56588,0.42765 0.22985,0.11492 0.40286,0.3322 0.64147,0.42764 1.51279,0.60512 -0.7349,-0.74029 0.85529,0.21382 0.92274,0.55365 1.6874,1.29693 2.56587,1.92441 0.33819,0.24156 0.71669,0.4212 1.06912,0.64147 0.21792,0.1362 0.41834,0.30014 0.64147,0.42764 0.27675,0.15815 0.55934,0.30927 0.85529,0.42765 0.30912,0.12365 0.29334,-0.30836 0.64147,0.21382 0.0791,0.11861 -0.1008,0.32685 0,0.42765 0.10079,0.1008 0.30904,-0.0791 0.42764,0 0.13261,0.0884 0.10113,0.31495 0.21383,0.42764 0.11269,0.1127 0.28509,0.14255 0.42764,0.21383 0.14255,0.14255 0.29859,0.27277 0.42765,0.42764 0.22814,0.27377 0.38947,0.6033 0.64146,0.85529 0.252,0.252 0.56709,0.43186 0.8553,0.64147 0.49585,0.36062 1.02574,0.6766 1.49676,1.06912 0.38717,0.32264 0.67905,0.74997 1.06911,1.06911 0.83778,0.68545 2.34097,1.42934 3.20735,1.92441 0.40578,0.23188 2.30673,1.41038 2.56587,1.49676 0.54514,0.18171 1.1447,0.11396 1.71058,0.21382 0.64712,0.1142 1.30101,0.21985 1.92441,0.42765 0.2438,0.0813 0.40287,0.3322 0.64147,0.42764 0.13235,0.0529 0.30015,-0.0637 0.42764,0 0.0637,0.0319 -0.0676,0.19129 0,0.21382 1.29537,0.4318 4.03373,0.71804 5.13175,0.8553 0.3829,0.0479 4.48196,0.53372 5.5594,0.64147 1.20565,0.12056 2.42689,-0.0929 3.63499,0 4.38913,0.33762 0.82672,0.0741 2.77969,0.85529 0.13236,0.0529 0.2851,0 0.42765,0 0.49892,0 0.99784,0 1.49676,0 0.71274,0 1.42549,0 2.13823,0 0.35637,0 0.7155,0.0442 1.06911,0 0.36063,-0.0451 0.70791,-0.17369 1.06912,-0.21383 0.49587,-0.0551 0.99784,0 1.49676,0 0.85529,0 1.71058,0 2.56587,0 0.8553,0 1.71354,0.071 2.56588,0 0.86409,-0.072 1.7075,-0.30502 2.56587,-0.42764 0.14083,-0.0201 0.92829,-0.0201 1.06912,0 0.35977,0.0514 0.70749,0.17766 1.06911,0.21382 0.35461,0.0355 0.71849,-0.0637 1.06912,0 0.4435,0.0806 0.83943,0.34701 1.28293,0.42765 0.26764,0.0487 1.69763,0 2.13823,0 1.56804,0 3.13607,0 4.70411,0"
+       id="path3" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 29.721381,82.535637 c 0.464783,0.210363 1.023443,-0.157773 1.496761,0 0.243795,0.08127 0.402865,0.332203 0.641469,0.427644 0.132353,0.05294 0.285097,0 0.427646,0 0.142547,0 0.285097,0 0.427646,0 0.07127,0 0.181946,-0.06375 0.213823,0 0.06375,0.1275 -0.100798,0.32685 0,0.427646 0.100796,0.100798 0.289354,-0.03457 0.427646,0 0.154615,0.03865 0.273029,0.17517 0.427644,0.213823 0.138292,0.03457 0.285099,0 0.427646,0 0.07128,0 0.154519,0.03954 0.213823,0 0.167738,-0.111824 0.247335,-0.337489 0.427646,-0.427646 0.1275,-0.06375 0.285096,0 0.427646,0 0.213823,0 0.43403,-0.05186 0.641469,0 0.154614,0.03866 0.273029,0.17517 0.427646,0.213823 0.162605,0.04065 0.890061,0 1.069115,0 0.07127,0 -0.14255,0 -0.213823,0"
+       id="path4" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.267711px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 47.896205,81.46665 249.10379,83.176976"
+       id="path5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.433259px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 65.628629,150.40047 63.73422,32.748305"
+       id="path14" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.299132px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="M 65.552178,66.576078 84.04646,66.364364 84.59853,80.760897"
+       id="path15" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.260753px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="M 19.887583,55.433058 62.919291,54.755073"
+       id="path16" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.284709px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="m 64.07882,54.14968 40.88835,-0.192918 1.09766,26.043995"
+       id="path17" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="m 63.719222,43.406047 109.691138,0.427646 1e-5,37.419007"
+       id="path18" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.529166, 1.05833;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="M 63.580855,32.891189 219.03009,34.174127"
+       id="path19" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.271854px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.815562, 0.815562;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="m 220.71296,34.846495 0.79999,115.602015"
+       id="path20" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.206793px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="M 19.535188,20.061105 82.43075,19.929221 82.854289,31.534993"
+       id="path21" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.294976px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.589951, 1.1799;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 83.575338,35.524434 84.21435,68.072783"
+       id="path22" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.276418px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 19.669988,76.818307 2.350056,73.576463"
+       id="path23" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.267797px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 22.157437,150.53124 226.465403,1.06927"
+       id="path24" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.271778px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 248.75926,83.31105 0.21362,68.42145"
+       id="path25" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="64.360687"
+       y="87.239738"
+       id="text25"><tspan
+         sodipodi:role="line"
+         id="tspan25"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="64.360687"
+         y="87.239738">0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="80.677612"
+       y="88.095032"
+       id="text26"><tspan
+         sodipodi:role="line"
+         id="tspan26"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="80.677612"
+         y="88.095032">12</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="104.77322"
+       y="88.095032"
+       id="text27"><tspan
+         sodipodi:role="line"
+         id="tspan27"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="104.77322"
+         y="88.095032">24</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="41.779739"
+       y="95.078049"
+       id="text27-9"><tspan
+         sodipodi:role="line"
+         id="tspan27-1"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="41.779739"
+         y="95.078049">内水</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="169.77538"
+       y="88.950325"
+       id="text28"><tspan
+         sodipodi:role="line"
+         id="tspan28"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="169.77538"
+         y="88.950325">200</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="215.37352"
+       y="88.98027"
+       id="text28-3"><tspan
+         sodipodi:role="line"
+         id="tspan28-3"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="215.37352"
+         y="88.98027">350</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';fill:#48c9f6;fill-opacity:1;stroke-width:0.264583"
+       x="222.58961"
+       y="81.038879"
+       id="text29"><tspan
+         sodipodi:role="line"
+         id="tspan29"
+         style="font-size:4.23333px;fill:#48c9f6;fill-opacity:1;stroke-width:0.264583"
+         x="222.58961"
+         y="81.038879">公海</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';fill:#48c9f6;fill-opacity:1;stroke-width:0.264583"
+       x="114.34605"
+       y="42.103111"
+       id="text29-2"><tspan
+         sodipodi:role="line"
+         id="tspan29-3"
+         style="font-size:4.23333px;fill:#48c9f6;fill-opacity:1;stroke-width:0.264583"
+         x="114.34605"
+         y="42.103111">专属经济区</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';fill:#48c9f6;fill-opacity:1;stroke-width:0.264583"
+       x="87.067459"
+       y="52.123596"
+       id="text29-6"><tspan
+         sodipodi:role="line"
+         id="tspan29-6"
+         style="font-size:4.23333px;fill:#48c9f6;fill-opacity:1;stroke-width:0.264583"
+         x="87.067459"
+         y="52.123596">毗连区</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';fill:#48c9f6;fill-opacity:1;stroke-width:0.264583"
+       x="67.667984"
+       y="64.476234"
+       id="text29-9"><tspan
+         sodipodi:role="line"
+         id="tspan29-0"
+         style="font-size:4.23333px;fill:#48c9f6;fill-opacity:1;stroke-width:0.264583"
+         x="67.667984"
+         y="64.476234">领海</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';fill:#48c9f6;fill-opacity:1;stroke-width:0.264583"
+       x="116.32114"
+       y="26.964928"
+       id="text29-3"><tspan
+         sodipodi:role="line"
+         id="tspan29-7"
+         style="font-size:4.23333px;fill:#48c9f6;fill-opacity:1;stroke-width:0.264583"
+         x="116.32114"
+         y="26.964928">大陆架</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 34.211662,83.60475 0.641469,10.049676"
+       id="path29" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 34.853131,93.654424 5.429644,0.0084"
+       id="path30" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 55.166307,81.680343 0.427646,11.841789"
+       id="path31" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 47.895176,93.526905 v -0.0048"
+       id="path32" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 55.593953,93.522132 -7.698777,-2.9e-5"
+       id="path33" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="31.218142"
+       y="75.537041"
+       id="text33"><tspan
+         sodipodi:role="line"
+         id="tspan33"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="31.218142"
+         y="75.537041">河</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="31.218142"
+         y="80.935318"
+         id="tspan34">湖</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="48.86462"
+       y="74.141449"
+       id="text33-0"><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="48.86462"
+         y="74.141449"
+         id="tspan34-8">内</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="48.86462"
+         y="79.539726"
+         id="tspan35">海</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="34.261272"
+       y="17.961123"
+       id="text36"><tspan
+         sodipodi:role="line"
+         id="tspan36"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="34.261272"
+         y="17.961123">领空</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="114.37085"
+       y="125.04262"
+       id="text36-1"><tspan
+         sodipodi:role="line"
+         id="tspan36-59"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="114.37085"
+         y="125.04262">海洋底土</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="203.87309"
+       y="63.066456"
+       id="text36-7"><tspan
+         sodipodi:role="line"
+         id="tspan36-7"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="203.87309"
+         y="63.066456">停止信号、不能中断、他国领海</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="223.4821"
+       y="149.35808"
+       id="text36-3"><tspan
+         sodipodi:role="line"
+         id="tspan36-5"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="223.4821"
+         y="149.35808">国际海底区域</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 243.7581,143.26134 c 0.0713,-0.0713 0.28509,-0.14255 0.21382,-0.21383 -0.0713,-0.0713 -0.30741,0.17639 -0.21382,0.21383 0.40253,0.16101 0.85154,0.17068 1.28293,0.21382 0.28369,0.0284 0.6003,-0.1275 0.8553,0 0.1275,0.0637 -0.1008,0.32685 0,0.42765 0.10079,0.10079 0.30903,-0.0791 0.42764,0 0.13261,0.0884 0.0812,0.33924 0.21382,0.42764 0.11861,0.0791 0.28653,0.0202 0.42765,0 0.35978,-0.0514 0.75748,-0.0268 1.06911,-0.21382 0.12224,-0.0733 -0.10079,-0.32685 0,-0.42765 0.60839,-0.60838 0.23037,0.3042 0.64147,0 0.082,-0.0607 0.0988,-0.17857 0.14818,-0.26786"
+       id="path36" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="58.027618"
+       y="33.842758"
+       id="text37"><tspan
+         sodipodi:role="line"
+         id="tspan37"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="58.027618"
+         y="33.842758">领</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="58.027618"
+         y="39.241039"
+         id="tspan38">海</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="58.027618"
+         y="44.63932"
+         id="tspan39">基</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="58.027618"
+         y="50.037601"
+         id="tspan40">线</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="35.066952"
+       y="53.454098"
+       id="text41"><tspan
+         sodipodi:role="line"
+         id="tspan41"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="35.066952"
+         y="53.454098">领陆</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:0.79374898,0.79374898;stroke-dashoffset:0"
+       d="m 173.53121,33.83539 -0.12085,9.998302"
+       id="path41" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="43.474503"
+       y="67.695221"
+       id="text42"><tspan
+         sodipodi:role="line"
+         id="tspan42"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="43.474503"
+         y="67.695221">完全主权</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="44.131298"
+       y="17.870773"
+       id="text42-1"><tspan
+         sodipodi:role="line"
+         id="tspan42-21"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="44.131298"
+         y="17.870773">完全主权</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="213.78209"
+       y="56.240509"
+       id="text42-6"><tspan
+         sodipodi:role="line"
+         id="tspan42-70"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="213.78209"
+         y="56.240509">紧追权</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583;text-anchor:middle;text-align:center"
+       x="235.57755"
+       y="90.518158"
+       id="text42-4"><tspan
+         sodipodi:role="line"
+         id="tspan42-71"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583;text-anchor:middle;text-align:center"
+         x="227.14189"
+         y="90.518158">海盗</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583;text-anchor:middle;text-align:center"
+         x="227.14189"
+         y="95.916435"
+         id="tspan59">非法广播</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583;text-anchor:middle;text-align:center"
+         x="227.14189"
+         y="101.31472"
+         id="tspan60">贩毒</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583;text-anchor:middle;text-align:center"
+         x="227.14189"
+         y="106.713"
+         id="tspan62">贩奴</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="145.97226"
+       y="32.81126"
+       id="text42-5"><tspan
+         sodipodi:role="line"
+         id="tspan42-6"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="145.97226"
+         y="32.81126">自愿开发，内  外有别</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="131.21625"
+       y="26.969061"
+       id="text42-94"><tspan
+         sodipodi:role="line"
+         id="tspan42-82"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="131.21625"
+         y="26.969061">举证获得、开发和管辖</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="197.42828"
+       y="76.280952"
+       id="text42-0"><tspan
+         sodipodi:role="line"
+         id="tspan42-86"
+         style="font-size:4.23333px;text-align:center;text-anchor:middle;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="197.42828"
+         y="76.280952">国际海底管理局</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;text-align:center;text-anchor:middle;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="197.42828"
+         y="81.67923"
+         id="tspan57">缴费 + 发展中国家免缴</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583;text-anchor:middle;text-align:center"
+       x="75.462212"
+       y="126.52642"
+       id="text42-3"><tspan
+         sodipodi:role="line"
+         id="tspan42-7"
+         style="font-size:3.88056px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583;text-anchor:middle;text-align:center"
+         x="67.738991"
+         y="126.52642">无害通过</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:3.88056px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583;text-anchor:middle;text-align:center"
+         x="67.738991"
+         y="131.47485"
+         id="tspan55">不得收费</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:3.88056px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583;text-anchor:middle;text-align:center"
+         x="67.738991"
+         y="136.42329"
+         id="tspan56">设关卡</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="114.34605"
+       y="49.891724"
+       id="text42-7"><tspan
+         sodipodi:role="line"
+         id="tspan42-4"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="114.34605"
+         y="49.891724">开发和管辖</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="114.34605"
+         y="55.290005"
+         id="tspan53">事先报备</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="114.34605"
+         y="60.688286"
+         id="tspan54">宣告有效</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="87.343475"
+       y="59.567974"
+       id="text42-9"><tspan
+         sodipodi:role="line"
+         id="tspan42-8"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="87.343475"
+         y="59.567974">海关</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="87.343475"
+         y="64.966255"
+         id="tspan48">财政</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="87.343475"
+         y="70.364532"
+         id="tspan49">移民</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="87.343475"
+         y="75.76281"
+         id="tspan50">卫生</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="87.343475"
+         y="81.161095"
+         id="tspan52">国家安全</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="39.882568"
+       y="103.73039"
+       id="text43"><tspan
+         sodipodi:role="line"
+         id="tspan43"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="39.882568"
+         y="103.73039">港口 3 主动</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="39.882568"
+         y="109.12867"
+         id="tspan45">安宁</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="39.882568"
+         y="114.52695"
+         id="tspan46">案情重大</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="39.882568"
+         y="119.92523"
+         id="tspan47">本国人受害</tspan></text>
+    <g
+       id="g1"
+       transform="translate(189.71279,15.776728)">
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+         x="42.496021"
+         y="64.979362"
+         id="text42-07"><tspan
+           sodipodi:role="line"
+           id="tspan42-9"
+           style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+           x="42.496021"
+           y="64.979362">船旗国</tspan></text>
+    </g>
+    <g
+       id="g1-9"
+       transform="translate(179.40671,77.315164)">
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="54.192707"
+         y="58.285473"
+         id="text42-90"><tspan
+           sodipodi:role="line"
+           style="font-size:4.23333px;text-align:center;text-anchor:middle;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+           x="54.192707"
+           y="58.285473"
+           id="tspan58">平行开发</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:4.23333px;text-align:center;text-anchor:middle;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+           x="54.192707"
+           y="63.683754"
+           id="tspan67">勘探者 + 国际海底管理局</tspan></text>
+    </g>
+    <g
+       id="g1-4"
+       transform="translate(177.99833,69.794677)">
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+         x="34.413654"
+         y="71.204239"
+         id="text42-8"><tspan
+           sodipodi:role="line"
+           id="tspan42-2"
+           style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+           x="34.413654"
+           y="71.204239" /></text>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="m 73.34125,67.856402 0.855292,50.740758"
+       id="path59"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="m 206.33909,57.518357 27.36933,0.213824"
+       id="path63"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="m 239.69546,71.581059 23.3067,0.213823"
+       id="path64"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="245.84195"
+       y="69.17662"
+       id="text42-64"><tspan
+         sodipodi:role="line"
+         id="tspan42-92"
+         style="font-size:4.23333px;fill:#028e5e;fill-opacity:1;stroke-width:0.264583"
+         x="245.84195"
+         y="69.17662">登临权</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:0.79374898,0.79374898;stroke-dashoffset:0"
+       d="m 173.41037,81.252699 0.74083,69.813171"
+       id="path65" />
+  </g>
+</svg>
