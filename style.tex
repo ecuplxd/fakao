@@ -1,4 +1,21 @@
-\documentclass[openany]{ctexbook}
+\documentclass[openany, fontset=none]{ctexbook}
+\setmainfont{XITS}
+% 中文默认字体：方正书宋_GBK，粗体为思源宋体半粗体，斜体为方正楷体_GBK
+\setCJKmainfont{FZShuSong-Z01}[BoldFont={Source Han Serif SC SemiBold}, ItalicFont=FZKai-Z03]
+% 中文无衬线字体：方正黑体_GBK，粗体为思源黑体中粗体
+\setCJKsansfont{FZHei-B01}[BoldFont={Source Han Sans CN Medium}]
+% 中文等宽字体：方正仿宋_GBK
+\setCJKmonofont{FZFangSong-Z02}
+
+\newCJKfontfamily\songti{FZShuSong-Z01}[BoldFont={Source Han Serif SC SemiBold}]
+\newCJKfontfamily\xbsong{Source Han Serif SC SemiBold} % 小标宋
+\newCJKfontfamily\dbsong{Source Han Serif SC Bold} % 大标宋
+\newCJKfontfamily\cusong{Source Han Serif SC Heavy} % 粗宋
+\newCJKfontfamily\heiti{FZHei-B01}[BoldFont={Source Han Sans CN Medium}]
+\newCJKfontfamily\dahei{Source Han Sans CN Medium} % 大黑
+\newCJKfontfamily\cuhei{Source Han Sans CN Bold} % 粗黑
+\newCJKfontfamily\fangsong{FZFangSong-Z02}
+\newCJKfontfamily\kaiti{FZKai-Z03}
 \usepackage[a4paper, twoside=false, includemp]{geometry}
 \geometry{left=1cm, right=0.1cm, bottom=1.6cm, top=1.6cm, marginparwidth=36pt}
 \usepackage[notindex]{tocbibind}
@@ -8,6 +25,7 @@
 % \usepackage{tikz-qtree}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{zhlineskip}
 \usepackage{amssymb}
 \usepackage{multirow}
 \usepackage[edges]{forest}
@@ -56,7 +74,6 @@
 \tcbuselibrary{breakable}
 \newtcolorbox{kk}[2][]{
 	enhanced,
-	% breakable,
 	boxed title size=copy,
 	left=4pt,
 	right=4pt,
@@ -83,29 +100,32 @@
 \setlength{\fboxsep}{1pt}
 \newcommand\kd[1]{\fcolorbox{mygreen}{white}{\textcolor{mygreen}{#1}}} % 标题
 \newcommand\hzi[1]{\textcolor{magenta}{#1}}
-\newcommand\zd[1]{\CJKunderline*[textformat=\color{mygreen}]{#1}} % 带下划线的重点
+\newcommand\hs[1]{\textcolor{red}{#1}}
+\newcommand\zd[1]{\CJKunderline*[textformat=\color{mygreen}]{#1}} % 带下划线的重点
+\newcommand\bs[1]{\CJKunderline*[textformat=\bfseries\color{mygreen}]{#1}} % 容易忽略的知识点，背诵
 \newcommand\qd[1]{\textcolor{mygreen}{#1}} % 强调
-\newcommand\al[1]{\hzi{\fangsong{#1}}} % 案例
-\newcommand\ft[1]{\hzi{\fangsong{#1}}} % 法条
+\newcommand\al[1]{\hzi{\texttt{#1}}} % 案例
+\newcommand\ft[1]{\hzi{\texttt{#1}}} % 法条
 
 \newcommand\sy[1]{{#1}\index{#1}} % 索引
 \newcommand\bq[1]{{#1}\label{#1}\index{#1}} % 标签
 \newcommand\yy[1]{{#1}\ref{#1}} % 引用
 \newcommand\tz[1]{\hyperref[#1]{#1}} % 跳转
 
-\newcommand\yjt{\textbf{→}} % 右箭头
+\newcommand\yjt{\textbf{→} } % 右箭头
 \newcommand\zyjt{$ \longleftrightarrow $} % 左右箭头
-\newcommand\sjt{\textbf{↑}} % 上箭头
+\newcommand\sjt{\raisebox{0.15ex}{\textbf{↑}\,}} % 上箭头
 \newcommand\xjt{\textbf{↓}} % 下箭头
 \newcommand\blh{\textasciitilde} % 波浪号
-\newcommand\ydy{$ \approx $} % 约等于
-\newcommand\bdy{$ \neq $} % 不等于
+\newcommand\ydy{≈} % 约等于
+\newcommand\bdy{≠} % 不等于
+\newcommand\dydy{≥\,\,} % 大于等于
+\newcommand\xydy{≤\,\,} % 小于等于
 \newcommand\hz{||} % 或者
 \newcommand\cuo{×} % 错
 \newcommand\dui{√} % 对
 
-\usepackage{pifont}
-\newcommand\yi{\mbox{\raisebox{-0.15ex}{\qd{\ding{172}}\,}}} % 圆圈 1 - 4
-\newcommand\er{\mbox{\raisebox{-0.15ex}{\qd{\ding{173}}\,}}} %
-\newcommand\san{\mbox{\raisebox{-0.15ex}{\qd{\ding{174}}\,}}} %
-\newcommand\si{\mbox{\raisebox{-0.15ex}{\qd{\ding{175}}\,}}} %
+\newcommand\yi{\qd{①}\,} % 圆圈 1 - 4
+\newcommand\er{\qd{②}\,} %
+\newcommand\san{\qd{③}\,} %
+\newcommand\si{\qd{④}\,} %

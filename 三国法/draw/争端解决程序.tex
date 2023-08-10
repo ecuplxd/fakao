@@ -1,16 +1,15 @@
-% https://q.uiver.app/#q=WzAsNixbMCwwLCLno4vllYZcXFxc5b+F57uP56iL5bqP44CBNjAg5aSp44CB5L+d5a+GIl0sWzAsMSwi5LiT5a6257uE5a6h55CGXFxcXOmdnuW4uOiuvuOAgeWRiuWVpeWuoeWVpSJdLFsyLDEsIuS4iuivieacuuaehOWuoeeQhlxcXFzluLjorr7vvJvku4Xms5Xlvovpl67popjvvJvml6DmnYPlj5Hlm57ph43lrqEiXSxbMSwyLCLkuonnq6/op6PlhrPmnLrmnoTpgJrov4fmiqXlkYrvvIjlj43lkJHljY/llYbkuIDoh7Tljp/liJnvvIkiXSxbMSwzLCLoo4HlhrPnmoTlsaXooYzlkoznm5HnnaMiXSxbMSw0LCLkuI3miafooYzvvIzmjojmnYPlkI7kuqTlj4nmiqXlpI1cXFxc5LiO5Y+X5o2f5a6z56iL5bqm55u4562JIl0sWzAsMV0sWzEsMl0sWzEsM10sWzIsM10sWzMsNF0sWzQsNV1d
+% https://q.uiver.app/#q=WzAsNixbMCwwLCLno4vllYbliY3nva5cXFxcNjAg5aSp44CB5L+d5a+GIl0sWzEsMCwi5LiT5a6257uEXFxcXOmdnuW4uOiuvuOAgeWRiuWVpeWuoeWVpSJdLFsyLDAsIuS4iuivieacuuaehFxcXFw3IOmAiSAz44CB5LuF5rOV5b6L6Zeu6aKY44CB5peg5p2D5Y+R5Zue6YeN5a6hIl0sWzIsMiwi5LqJ56uv6Kej5Yaz5py65p6EIl0sWzAsMiwi5LiN5omn6KGM77yM5o6I5p2D5ZCO5Lqk5Y+J5oql5aSNXFxcXOS4juWPl+aNn+Wus+eoi+W6puebuOetiSJdLFsxLDIsIuijgeWGsyJdLFswLDFdLFsxLDJdLFsyLDMsIuaKpeWRiiIsMV0sWzMsNSwi5Y+N5ZCR5Y2P5ZWG5LiA6Ie05Y6f5YiZIiwyXSxbNSw0LCLlsaXooYwiLDJdLFs1LDQsIuebkeedoyJdLFszLDUsIuWPmOaIkCJdXQ==
 \[
-  \begin{tikzcd}[column sep=tiny]
-    \txt{磋商\\必经程序、60 天、保密} \\
-    \txt{专家组审理\\非常设、告啥审啥} && \txt{上诉机构审理\\常设、仅法律问题、无权发回重审} \\
-    & \txt{争端解决机构通过报告（反向协商一致原则）} \\
-    & \txt{裁决的履行和监督} \\
-    & \txt{不执行，授权后交叉报复\\与受损害程度相等}
-    \arrow[from=1-1, to=2-1]
-    \arrow[from=2-1, to=2-3]
-    \arrow[from=2-1, to=3-2]
-    \arrow[from=2-3, to=3-2]
-    \arrow[from=3-2, to=4-2]
-    \arrow[from=4-2, to=5-2]
+  \begin{tikzcd}[column sep=huge]
+    \txt{磋商前置\\60 天、保密} & \txt{专家组\\非常设、告啥审啥} & \txt{上诉机构\\7 选 3、仅法律问题、无权发回重审} \\
+    \\
+    \txt{授权后交叉报复\\与受损害程度相等} & \txt{裁决} & \txt{争端解决机构}
+    \arrow[from=1-1, to=1-2]
+    \arrow[from=1-2, to=1-3]
+    \arrow["\txt{报告}"{description}, from=1-3, to=3-3]
+    \arrow["\txt{反向协商一致原则}"', from=3-3, to=3-2]
+    \arrow["\txt{无强制执行程序}"', from=3-2, to=3-1]
+    \arrow["\txt{不履行}", from=3-2, to=3-1]
+    \arrow["\txt{变成}", from=3-3, to=3-2]
   \end{tikzcd}
 \]
