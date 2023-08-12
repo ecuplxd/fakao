@@ -1,13 +1,13 @@
 \documentclass[openany, fontset=none]{ctexbook}
 \setmainfont{XITS}
 % 中文默认字体：方正书宋_GBK，粗体为思源宋体半粗体，斜体为方正楷体_GBK
-\setCJKmainfont{FZShuSong-Z01}[BoldFont={Source Han Serif SC SemiBold}, ItalicFont=FZKai-Z03]
+\setCJKmainfont{FZNewShuSong-Z10}[BoldFont={Source Han Serif SC SemiBold}, ItalicFont=FZKai-Z03]
 % 中文无衬线字体：方正黑体_GBK，粗体为思源黑体中粗体
 \setCJKsansfont{FZHei-B01}[BoldFont={Source Han Sans CN Medium}]
 % 中文等宽字体：方正仿宋_GBK
 \setCJKmonofont{FZFangSong-Z02}
 
-\newCJKfontfamily\songti{FZShuSong-Z01}[BoldFont={Source Han Serif SC SemiBold}]
+\newCJKfontfamily\songti{FZNewShuSong-Z10}[BoldFont={Source Han Serif SC SemiBold}]
 \newCJKfontfamily\xbsong{Source Han Serif SC SemiBold} % 小标宋
 \newCJKfontfamily\dbsong{Source Han Serif SC Bold} % 大标宋
 \newCJKfontfamily\cusong{Source Han Serif SC Heavy} % 粗宋
@@ -92,20 +92,18 @@
 \setlist{nosep}
 \usepackage{xeCJKfntef}
 \newcommand\xhx[1]{\CJKunderline*{#1}} % 下划线
-\newcommand\sxhx[1]{\CJKunderdblline*{#1}} % 双下划线
-\newcommand\blx[1]{\CJKunderwave*{#1}} % 波浪线
 \newcommand\scx[1]{\CJKsout*{#1}} % 删除线
-\newcommand\jd[1]{\CJKunderdot{#1}} % 点线
 
 \setlength{\fboxsep}{1pt}
-\newcommand\kd[1]{\fcolorbox{mygreen}{white}{\textcolor{mygreen}{#1}}} % 标题
 \newcommand\hzi[1]{\textcolor{magenta}{#1}}
 \newcommand\hs[1]{\textcolor{red}{#1}}
 \newcommand\zd[1]{\CJKunderline*[textformat=\color{mygreen}]{#1}} % 带下划线的重点
-\newcommand\bs[1]{\CJKunderline*[textformat=\bfseries\color{mygreen}]{#1}} % 容易忽略的知识点，背诵
+\newcommand\bs[1]{\CJKunderline*[textformat=\kaiti\color{red}]{#1}} % 容易忽略的知识点，背诵
 \newcommand\qd[1]{\textcolor{mygreen}{#1}} % 强调
-\newcommand\al[1]{\hzi{\texttt{#1}}} % 案例
-\newcommand\ft[1]{\hzi{\texttt{#1}}} % 法条
+\newcommand\al[1]{\hzi{\fangsong{#1}}} % 案例 不用 texttt
+\newcommand\ft[1]{\hzi{\fangsong{#1}}} % 法条
+% \newcommand\kd[1]{\fcolorbox{mygreen}{white}{\textcolor{mygreen}{#1}}} % 标题
+\newcommand\kd[1]{\zd{#1}} % 标题
 
 \newcommand\sy[1]{{#1}\index{#1}} % 索引
 \newcommand\bq[1]{{#1}\label{#1}\index{#1}} % 标签
@@ -117,15 +115,15 @@
 \newcommand\sjt{\raisebox{0.2ex}{\textbf{↑}}\,} % 上箭头
 \newcommand\xjt{\textbf{↓}\,} % 下箭头
 \newcommand\blh{\textasciitilde} % 波浪号
-\newcommand\ydy{≈} % 约等于
-\newcommand\bdy{≠} % 不等于
+\newcommand\ydy{≈ } % 约等于
+\newcommand\bdy{≠ } % 不等于
 \newcommand\dydy{≥ } % 大于等于
 \newcommand\xydy{≤ } % 小于等于
-\newcommand\hz{||} % 或者
-\newcommand\cuo{×} % 错
-\newcommand\dui{√} % 对
+\newcommand\hz{|| } % 或者
+\newcommand\cuo{× } % 错
+\newcommand\dui{√ } % 对
 
-\newcommand\yi{\qd{①}\,} % 圆圈 1 - 4
-\newcommand\er{\qd{②}\,} %
-\newcommand\san{\qd{③}\,} %
-\newcommand\si{\qd{④}\,} %
+\newcommand\yi{\qd{①}.} % 圆圈 1 - 4
+\newcommand\er{\qd{②}.} %
+\newcommand\san{\qd{③}.} %
+\newcommand\si{\qd{④}.} %
