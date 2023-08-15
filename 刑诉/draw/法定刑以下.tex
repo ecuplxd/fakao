@@ -1,12 +1,16 @@
-% https://q.uiver.app/?q=WzAsMyxbMCwyLCLmrbvliJHvvIjkuK3pmaLvvIkiXSxbMCwxLCLlj6/ku6XlkKblhrMiXSxbMCwwLCLmnIDpq5jpmaIiXSxbMCwxLCLkuIrmiqUiLDFdLFsxLDIsIuS4iuaKpSIsMV0sWzAsMSwi5o+Q5a6hIiwyLHsiY3VydmUiOjN9XSxbMCwxLCLlj5Hlm54iLDAseyJjdXJ2ZSI6LTN9XV0=
+% https://q.uiver.app/#q=WzAsNyxbMCwyLCLms5XlrprliJHku6XkuIsiXSxbMCwxLCLlj6/ku6XlkKblhrMiXSxbMCwwLCLmnIDpq5jms5UiXSxbMiwyLCLms5XlrprliJHku6XkuIsiXSxbMiwxLCLkuozlrqEiXSxbMiwwLCLmnIDpq5jms5UiXSxbMywxLCLmlLnliKRcXFxc77yI57uI5a6h77yJIl0sWzAsMSwi5LiK5oqlIiwxXSxbMSwyLCLkuIrmiqUiLDFdLFsxLDAsIuWPkeWbniIsMix7Im9mZnNldCI6NSwiY3VydmUiOjF9XSxbMCwxLCLmj5DlrqEiLDIseyJvZmZzZXQiOjUsImN1cnZlIjoxfV0sWzMsNCwi5LiK6K+JIl0sWzMsNCwi5oqX6K+JIiwyXSxbNCw1LCLnu7TmjIHvvIzkuIrmiqUiLDFdLFs0LDZdXQ==
 \[
-  \begin{tikzcd}[row sep=huge]
-    \txt{最高法} \\
-    \txt{可以否决} \\
-    \txt{法定刑以下}
+  \begin{tikzcd}[row sep = huge]
+    \txt{最高法} && \txt{最高法} \\
+    \txt{可以否决} && \txt{二审} & \txt{改判\\（终审）} \\
+    \txt{法定刑以下} && \txt{法定刑以下}
     \arrow["\txt{上报}"{description}, from=3-1, to=2-1]
     \arrow["\txt{上报}"{description}, from=2-1, to=1-1]
+    \arrow["\txt{发回}"', shift right=8, curve={height=6pt}, from=2-1, to=3-1]
     \arrow["\txt{提审}"', shift right=8, curve={height=6pt}, from=3-1, to=2-1]
-    \arrow["\txt{发回}", shift left=8, curve={height=-6pt}, tail reversed, no head, from=3-1, to=2-1]
+    \arrow["\txt{上诉}", from=3-3, to=2-3]
+    \arrow["\txt{抗诉}"', from=3-3, to=2-3]
+    \arrow["\txt{维持，上报}"{description}, from=2-3, to=1-3]
+    \arrow[from=2-3, to=2-4]
   \end{tikzcd}
 \]

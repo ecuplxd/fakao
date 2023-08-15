@@ -88,8 +88,10 @@
 	fonttitle=\bfseries,
 	attach boxed title to top left,
 	title={#2},#1}
-\usepackage{enumitem}
+\usepackage[inline]{enumitem}
 \setlist{nosep}
+% \setlist[enumerate, 3]{label=(\arabic*), ref=\theenumii.(\arabic*)}
+% \setlist[itemize, 1]{label=$\ast$}
 \usepackage{xeCJKfntef}
 \newcommand\xhx[1]{\CJKunderline*{#1}} % 下划线
 \newcommand\scx[1]{\CJKsout*{#1}} % 删除线
