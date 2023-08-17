@@ -57,14 +57,6 @@
 \definecolor{mygreen}{RGB}{3,143,94}
 \usepackage{nameref}
 \usepackage[bookmarksopen=true]{hyperref}
-\hypersetup{
-	colorlinks,
-	% bookmarksnumbered,
-	pdftitle={法考},
-	pdfauthor={制作者：小兑},
-	pdfsubject={法考},
-	pdfkeywords={法考}
-}
 \usepackage{marginnote}
 \renewcommand*{\marginfont}{\scriptsize}
 \usepackage{bookmark}
@@ -129,3 +121,17 @@
 \newcommand\er{\qd{②}.} %
 \newcommand\san{\qd{③}.} %
 \newcommand\si{\qd{④}.} %
+\newcommand\info[2]{
+	\hypersetup{
+		colorlinks,
+		% bookmarksnumbered,
+		pdftitle={#1},
+		pdfauthor={小兑},
+		pdfsubject={法考 #1},
+		pdfkeywords={法考 #1}
+	}
+	\title{#1}
+	\author{ecuplxd}
+	\date{#2}
+}
+

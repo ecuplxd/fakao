@@ -1,12 +1,13 @@
-% https://q.uiver.app/?q=WzAsMTQsWzEsMCwi5LiZXFxcXOWAuuadg+S6uiJdLFszLDAsIueUslxcXFzmi4Xkv53kuroiXSxbMywyLCLkuZlcXFxc5YC65Yqh5Lq6Il0sWzEsMywi5LmZIl0sWzAsNCwi5oOF5b2iIDEiXSxbMCw1LCLmg4XlvaIgMiJdLFsxLDUsIjEwMDBXIl0sWzEsNCwiMjAwMFciXSxbMiw0LCIxMjAwVyJdLFsyLDMsIuS4mSJdLFszLDMsIueUsiJdLFszLDQsIjgwMFciXSxbMiw1LCIxMjAwVyJdLFszLDUsIjIwMFciXSxbMCwxLCIxMDAwVyDnjrDph5FcXFxcMjAwVyDliKnmga8iLDIseyJvZmZzZXQiOjF9XSxbMSwwLCIyMDAwVyIsMix7Im9mZnNldCI6MX1dLFsyLDEsIjIwMDBXIiwyLHsib2Zmc2V0IjotMX1dLFswLDEsIuWPr+S7pSIsMCx7ImN1cnZlIjotM31dLFswLDIsIuWPr+S7pSIsMix7ImN1cnZlIjoxfV1d
+% https://q.uiver.app/#q=WzAsMTQsWzAsMCwi5LiZXFxcXOWAuuadg+S6uiJdLFsyLDAsIueUslxcXFzmi4Xkv53kuroiXSxbMiwyLCLkuZlcXFxc5YC65Yqh5Lq6Il0sWzQsMCwi5LmZIl0sWzMsMSwi5oOF5b2iIDEiXSxbMywyLCLmg4XlvaIgMiJdLFs0LDIsIjEwMDBXIl0sWzQsMSwiMjAwMFciXSxbNSwxLCIxMjAwVyJdLFs1LDAsIuS4mSJdLFs2LDAsIueUsiJdLFs2LDEsIjgwMFciXSxbNSwyLCIxMjAwVyJdLFs2LDIsIjIwMFciXSxbMCwxLCIxMDAwVyDnjrDph5FcXFxcMjAwVyDliKnmga8iLDIseyJvZmZzZXQiOjF9XSxbMSwwLCIyMDAwVyIsMix7Im9mZnNldCI6MX1dLFsyLDEsIjIwMDBXIiwxLHsib2Zmc2V0IjotMX1dLFswLDEsIuWPr+S7pSIsMCx7ImN1cnZlIjotM31dLFswLDIsIuWPr+S7pSIsMSx7ImN1cnZlIjoxfV1d
 \[
-  \begin{tikzcd}[column sep=3.15cm,row sep=1cm]
-    \txt{丙\\债权人} & \txt{甲\\担保人} \\
-    & \txt{乙\\债务人}
-    \arrow["\txt{1000W 现金\\200W 利息}"', shift right=1, from=1-1, to=1-2]
-    \arrow["2000W"', shift right=1, from=1-2, to=1-1]
-    \arrow["2000W"', shift left=1, from=2-2, to=1-2]
-    \arrow["\txt{可以}", curve={height=-18pt}, from=1-1, to=1-2]
-    \arrow["\txt{可以}"', curve={height=18pt}, from=1-1, to=2-2]
+  \begin{tikzcd}
+    \txt{丙\\债权人} &&& \txt{甲\\担保人} && \txt{乙} & \txt{丙\\旱涝保收} & \txt{甲} \\
+    &&&& \txt{情形 1} & \txt{还 20W} & \txt{12W} & \txt{8W} \\
+    &&& \txt{乙\\债务人} & \txt{情形 2} & \txt{10W} & \txt{12W} & \txt{2W}
+    \arrow["\txt{10W 现金给\\+2W 利息}"', shift right, from=1-1, to=1-4]
+    \arrow["\txt{20W}"', shift right, from=1-4, to=1-1]
+    \arrow["\txt{20W}"{description}, shift left, from=3-4, to=1-4]
+    \arrow["\txt{可以}", curve={height=-18pt}, from=1-1, to=1-4]
+    \arrow["\txt{可以}"{description}, curve={height=18pt}, from=1-1, to=3-4]
   \end{tikzcd}
 \]
