@@ -1,23 +1,9 @@
 \centering
 \begin{forest}
-  arrow to/.style n args=4{%
-    delay={%
-      tikz+={%
-        \draw [every edge, line] () -- (!#1) node [above, midway] {#2};
-      },
-    },
-  },
-  for tree={%
-    parent anchor=south,
-    child anchor=north,
-    calign=center,
+  my tree,
+  for tree={
     grow=south,
-    base=bottom,
-    edge={line},
-    l sep+=15pt,
-    font=\small
   },
-  % forked edges, % 边方框样式
   [体系审查
     [客观
       [危害行为
@@ -33,10 +19,10 @@
     [主观\\（有无有犯罪故意）,align=center,base=bottom
       [没有\\（缺乏犯罪故意型认识错误）,align=center,base=bottom
         [事实认识错误
-          [焦点\\过失犯罪 \hz 意外事件,align=center,base=bottom]
+          [焦点\\过失 \hz 意外,align=center,base=bottom]
         ]
         [法律认识错误
-          [违法性的认识可能性]
+          [违法性认识可能性]
         ]
       ]
       [有\\（具有犯罪故意型认识错误）,align=center,base=bottom
@@ -61,7 +47,7 @@
               ]
           ]
           [抽象的错误\\（不同犯罪构成间的错误）,align=center,base=bottom
-            [分别分析法]
+            [分别分析]
           ]
         ]
       ]

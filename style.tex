@@ -16,25 +16,41 @@
 \newCJKfontfamily\cuhei{Source Han Sans CN Bold} % 粗黑
 \newCJKfontfamily\fangsong{FZFangSong-Z02}
 \newCJKfontfamily\kaiti{FZKai-Z03}
+\usepackage{layout}
 \usepackage[a4paper, twoside=false, includemp]{geometry}
 \geometry{left=1cm, right=0.1cm, bottom=1.6cm, top=1.6cm, marginparwidth=36pt}
 \usepackage[notindex]{tocbibind}
+\usepackage{xcolor}
+\definecolor{mygreen}{RGB}{3,143,94}
+\usepackage{zhlineskip}
+\usepackage{multirow}
 \usepackage{makecell}
-\usepackage{tikz}
-\usepackage{tikz-cd}
-% \usepackage{tikz-qtree}
 \usepackage{graphicx}
 \usepackage{amsmath}
-\usepackage{zhlineskip}
-\usepackage{amssymb}
-\usepackage{multirow}
 \usepackage[edges]{forest}
+\forestset{
+	my tree/.style={
+		for tree={
+			grow'=east,
+			forked edge,
+			edge={line, mygreen},
+			thick,
+			draw=mygreen,
+			fill=gray!30,
+			rounded corners,
+			font=\small,
+		}
+	}
+}
+\usepackage{tikz}
+% quiver
+\usepackage{tikz-cd}
+\usepackage{amssymb}
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{calc}
 \usetikzlibrary{decorations.pathmorphing}
-\tikzset{
-	line/.style={draw, -Stealth},
-}
+\tikzset{line/.style={draw, -Stealth}}
+% \tikzset{line/.style={draw, -{Circle[open]}}}
 \tikzset{curve/.style={settings={#1},to path={(\tikztostart)
 					.. controls ($(\tikztostart)!\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
 					and ($(\tikztostart)!1-\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
@@ -46,19 +62,15 @@
 \tikzset{2tail/.code={\pgfsetarrowsstart{Implies[reversed]}}}
 \tikzset{2tail reversed/.code={\pgfsetarrowsstart{Implies}}}
 \tikzset{no body/.style={/tikz/dash pattern=on 0 off 1mm}}
+% end quiver
 \usepackage[all, pdf]{xy}
 \usepackage{imakeidx}
 \makeindex[
 	intoc=true,
 	columns=1
 ]
-\usepackage{xcolor}
-\usepackage{layout}
-\definecolor{mygreen}{RGB}{3,143,94}
 \usepackage{nameref}
 \usepackage[bookmarksopen=true]{hyperref}
-\usepackage{marginnote}
-\renewcommand*{\marginfont}{\scriptsize}
 \usepackage{bookmark}
 \usepackage{paracol}
 \usepackage{tcolorbox}
@@ -134,4 +146,13 @@
 	\author{ecuplxd}
 	\date{#2}
 }
-
+\makeatletter
+\newcommand{\DrawLine}{%
+  \begin{tikzpicture}
+  \path[use as bounding box] (0,0) -- (\linewidth, 0);
+  \draw[color=mygreen, dashed, dash phase=2pt]
+        (0 - \kvtcb@leftlower - \kvtcb@boxsep, 0)--
+        (\linewidth + \kvtcb@rightlower + \kvtcb@boxsep, 0);
+  \end{tikzpicture}%
+  }
+\makeatother
