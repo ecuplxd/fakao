@@ -1,14 +1,14 @@
 % https://q.uiver.app/?q=WzAsNCxbMCwwLCLlh7pcXFxc5a2fXFxcXOadgyJdLFszLDAsIuaJv1xcXFzpqaxcXFxc5YqhIl0sWzYsMCwi5qyh5om/XFxcXOabuVxcXFzkuIkiXSxbMCwxLCLmi5Lnu53mnYMiLFswLDYwLDYwLDFdXSxbMCwxLCLmiL8v5pys56efXFxcXDPlubQvMVciLDNdLFsxLDIsIuaIvy/ovaznp59cXFxcMyDlubQvMS41VyIsM10sWzAsMSwi5YKs5ZGKICsg5ZCI55CG5pyf6ZmQICsg6Kej6ZmkIiwwLHsiY3VydmUiOi0yLCJjb2xvdXIiOlsyNzAsNjAsNjBdfSxbMjcwLDYwLDYwLDFdXSxbMSwyLCLpgJrnn6VcXFxc57uI5q2iIiwzLHsiY3VydmUiOi0zLCJjb2xvdXIiOlsyNzAsNjAsNjBdfSxbMjcwLDYwLDYwLDFdXSxbMCwyLCIyV++8iOi0p+W4geS5i+WAuu+8iVxcXFznrKzkuInkurrku6PkuLrlsaXooYwiLDMseyJjdXJ2ZSI6NSwiY29sb3VyIjpbMCw2MCw2MF0sInN0eWxlIjp7InRhaWwiOnsibmFtZSI6ImFycm93aGVhZCJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fSxbMCw2MCw2MCwxXV0sWzAsMSwi5qygIDJXIOenn+mHkSIsMix7ImN1cnZlIjoyfV0sWzAsMywiw5ciLDMseyJjb2xvdXIiOlswLDYwLDYwXX0sWzAsNjAsNjAsMV1dXQ==
 \[
-  \begin{tikzcd}[sep=huge]
+  \begin{tikzcd}[mytest, sep=huge]
     \txt{出\\孟\\权} &&& \txt{承\\马\\务} &&& \txt{次承\\曹\\三} \\
-    \textcolor{rgb,255:red,214;green,92;blue,92}{\txt{拒绝权}}
+    \textcolor{magenta}{\txt{拒绝权}}
     \arrow["\txt{房/本租\\3年/1W}"{marking}, from=1-1, to=1-4]
     \arrow["\txt{房/转租\\3 年/1.5W}"{marking}, from=1-4, to=1-7]
-    \arrow["\txt{合理期限 + 催告 + 解除}", color={rgb,255:red,153;green,92;blue,214}, curve={height=-24pt}, from=1-1, to=1-4]
-    \arrow["\txt{通知\\终止}"{marking}, color={rgb,255:red,153;green,92;blue,214}, curve={height=-36pt}, from=1-4, to=1-7]
-    \arrow["\txt{2W（货币之债）\\第三人代为履行}"{marking}, color={rgb,255:red,214;green,92;blue,92}, curve={height=72pt}, tail reversed, no head, from=1-1, to=1-7]
+    \arrow["\txt{合理期限 + 催告 + 解除}", color={mygreen}, curve={height=-24pt}, from=1-1, to=1-4]
+    \arrow["\txt{通知\\终止}"{marking}, color={mygreen}, curve={height=-36pt}, from=1-4, to=1-7]
+    \arrow["\txt{2W（货币之债）\\第三人代为履行}"{marking}, color={magenta}, curve={height=72pt}, tail reversed, no head, from=1-1, to=1-7]
     \arrow["\txt{欠 2W 租金}"', curve={height=24pt}, tail reversed, no head, from=1-1, to=1-4]
-    \arrow["{\cuo}"{marking}, color={rgb,255:red,214;green,92;blue,92}, from=1-1, to=2-1]
+    \arrow["{\cuo}"{marking}, color={magenta}, from=1-1, to=2-1]
   \end{tikzcd}
 \]

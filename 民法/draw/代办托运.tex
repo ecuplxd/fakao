@@ -1,7 +1,7 @@
 % https://q.uiver.app/?q=WzAsMTEsWzEsMCwi5YyX5LqsXFxcXOeUslxcXFzljZYiXSxbNiwwLCLlub/lt55cXFxc5LmZXFxcXOS5sCJdLFswLDIsIuS4gSJdLFsyLDIsIuS4mSJdLFs1LDEsIuW5v+S4nCJdLFs2LDEsIuW5v+ilvyJdLFs3LDEsIuS6keWNlyJdLFs4LDEsIui0teW3niJdLFswLDAsIuWPl+aJmOS6uiIsWzEyMCw2MCw2MCwxXV0sWzcsMCwi5aeU5omY5Lq6IixbMTIwLDYwLDYwLDFdXSxbOCwwLCIyMDIyLjExLjE4XFxcXOaIkOeri+aXtiIsWzI3MCw2MCw2MCwxXV0sWzAsMiwi5L+d6Zmp5ZCI5ZCMIiwxXSxbMCwzLCLov5DovpPlkIjlkIwiLDFdLFsxLDQsIjEuMlciLDFdLFsxLDUsIjEuMlciLDFdLFsxLDYsIjEuMVciLDFdLFsxLDcsIjEuM1ciLDFdLFswLDEsIjIwMCDlj7DnlLXohJEiXSxbMiwwLCLkv53ljZUiLDEseyJjdXJ2ZSI6LTMsImNvbG91ciI6WzAsNjAsNjBdfSxbMCw2MCw2MCwxXV0sWzMsMCwi5o+Q5Y2VIiwxLHsiY3VydmUiOjMsImNvbG91ciI6WzAsNjAsNjBdfSxbMCw2MCw2MCwxXV0sWzEsMCwi5Luj5Yqe5omY6L+QL+WnlOaJmOWQiOWQjCIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19LFsxMjAsNjAsNjAsMV1dLFszLDQsIuS6pOS7mOaXtlxcXFwyMDIyLjExLjE2IiwwLHsiY29sb3VyIjpbMjcwLDYwLDYwXX0sWzI3MCw2MCw2MCwxXV0sWzMsNSwiIiwxLHsiY29sb3VyIjpbMjcwLDYwLDYwXX1dLFszLDYsIiIsMSx7ImNvbG91ciI6WzI3MCw2MCw2MF19XSxbMyw3LCLlnKjpgJTotKfniakiLDIseyJjb2xvdXIiOlsyNzAsNjAsNjBdfSxbMjcwLDYwLDYwLDFdXV0=
 \[
-  \begin{tikzcd}
-    \textcolor{rgb,255:red,92;green,214;blue,92}{\txt{受托人}} & \txt{北京\\甲\\卖} &&&&& \txt{广州\\乙\\买} & \textcolor{rgb,255:red,92;green,214;blue,92}{\txt{委托人}} & \textcolor{rgb,255:red,153;green,92;blue,214}{\txt{2022.11.18\\成立时}} \\
+  \begin{tikzcd}[mytest]
+    \textcolor{mygreen}{\txt{受托人}} & \txt{北京\\甲\\卖} &&&&& \txt{广州\\乙\\买} & \textcolor{mygreen}{\txt{委托人}} & \textcolor{magenta}{\txt{成立时\\2022.1.8}} \\
     &&&&& \txt{广东} & \txt{广西} & \txt{云南} & \txt{贵州} \\
     \txt{丁} && \txt{丙}
     \arrow["\txt{保险合同}"{description}, from=1-2, to=3-1]
@@ -11,12 +11,12 @@
     \arrow["\txt{1.1W}"{description}, from=1-7, to=2-8]
     \arrow["\txt{1.3W}"{description}, from=1-7, to=2-9]
     \arrow["\txt{200 台电脑 1W/台}", from=1-2, to=1-7]
-    \arrow["\txt{保单}"{description}, color={rgb,255:red,214;green,92;blue,92}, curve={height=-30pt}, from=3-1, to=1-2]
-    \arrow["\txt{提单}"{description}, color={rgb,255:red,214;green,92;blue,92}, curve={height=30pt}, from=3-3, to=1-2]
-    \arrow["\txt{代办托运/委托合同}"{text={rgb,255:red,92;green,214;blue,92}}, no head, from=1-7, to=1-2]
-    \arrow["\txt{交付时\\2022.11.16}", color={rgb,255:red,153;green,92;blue,214}, from=3-3, to=2-6]
-    \arrow[color={rgb,255:red,153;green,92;blue,214}, from=3-3, to=2-7]
-    \arrow[color={rgb,255:red,153;green,92;blue,214}, from=3-3, to=2-8]
-    \arrow["\txt{在途货物}"', color={rgb,255:red,153;green,92;blue,214}, from=3-3, to=2-9]
+    \arrow["\txt{保单}"{description}, color={red}, curve={height=-30pt}, from=3-1, to=1-2]
+    \arrow["\txt{提单}"{description}, color={red}, curve={height=30pt}, from=3-3, to=1-2]
+    \arrow["\txt{代办托运/委托合同}"{text={mygreen}}, no head, from=1-7, to=1-2]
+    \arrow["\txt{交付时\\2022.1.6}", color={magenta}, from=3-3, to=2-6]
+    \arrow[color={magenta}, from=3-3, to=2-7]
+    \arrow[color={magenta}, from=3-3, to=2-8]
+    \arrow["\txt{在途货物}"', color={magenta}, from=3-3, to=2-9]
   \end{tikzcd}
 \]

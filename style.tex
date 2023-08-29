@@ -1,4 +1,10 @@
 \documentclass[openany, fontset=none]{ctexbook}
+\ctexset{
+  chapter={
+    beforeskip=0pt,
+    afterskip=20pt,
+   }
+}
 \setmainfont{XITS}
 % 中文默认字体：方正书宋_GBK，粗体为思源宋体半粗体，斜体为方正楷体_GBK
 \setCJKmainfont{FZNewShuSong-Z10}[BoldFont={Source Han Serif SC SemiBold}, ItalicFont=FZKai-Z03]
@@ -22,6 +28,7 @@
 \usepackage[notindex]{tocbibind}
 \usepackage{xcolor}
 \definecolor{mygreen}{RGB}{3,143,94}
+\colorlet{bgcolor}{mygreen!5}
 \usepackage{zhlineskip}
 \usepackage{multirow}
 \usepackage{makecell}
@@ -29,45 +36,74 @@
 \usepackage{amsmath}
 \usepackage[edges]{forest}
 \forestset{
-	my tree/.style={
-		for tree={
-			grow'=east,
-			forked edge,
-			edge={line, mygreen},
-			thick,
-			draw=mygreen,
-			fill=gray!30,
-			rounded corners,
-			font=\small,
-		}
-	}
+  default preamble={tikz+={\tikzset{
+    show background rectangle,
+    background rectangle/.style={draw=mygreen}
+  }}},
+  my tree/.style={
+      for tree={
+          grow'=east,
+          forked edge,
+          edge={line, mygreen},
+          thick,
+          draw=mygreen,
+          fill=bgcolor,
+          rounded corners=4pt,
+          font=\small,
+        }
+    }
 }
 \usepackage{tikz}
 % quiver
 \usepackage{tikz-cd}
 \usepackage{amssymb}
-\usetikzlibrary{arrows.meta}
+\usetikzlibrary{arrows.meta, backgrounds}
 \usetikzlibrary{calc}
 \usetikzlibrary{decorations.pathmorphing}
 \tikzset{line/.style={draw, -Stealth}}
 % \tikzset{line/.style={draw, -{Circle[open]}}}
-\tikzset{curve/.style={settings={#1},to path={(\tikztostart)
-					.. controls ($(\tikztostart)!\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
-					and ($(\tikztostart)!1-\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
-					.. (\tikztotarget)\tikztonodes}},
-	settings/.code={\tikzset{quiver/.cd,#1}
-			\def\pv##1{\pgfkeysvalueof{/tikz/quiver/##1}}},
-	quiver/.cd,pos/.initial=0.35,height/.initial=0}
+\tikzset{
+  curve/.style={
+      settings={#1},
+      to path={
+          (\tikztostart) .. controls ($(\tikztostart)!\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
+          and ($(\tikztostart)!1-\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
+          .. (\tikztotarget)\tikztonodes
+        },
+    },
+  settings/.code={
+      \tikzset{quiver/.cd, #1}
+      \def\pv##1{\pgfkeysvalueof{/tikz/quiver/##1}}
+    },
+  quiver/.cd, pos/.initial=0.35, height/.initial=0,
+}
 \tikzset{tail reversed/.code={\pgfsetarrowsstart{tikzcd to}}}
 \tikzset{2tail/.code={\pgfsetarrowsstart{Implies[reversed]}}}
 \tikzset{2tail reversed/.code={\pgfsetarrowsstart{Implies}}}
 \tikzset{no body/.style={/tikz/dash pattern=on 0 off 1mm}}
+\tikzcdset{
+  background color=bgcolor,
+  every label/.append style={font=\small},
+  marking/.append style={font=\small},
+  description/.append style={font=\small},
+}
+\tikzset{
+  mytest/.style={
+      show background rectangle,
+      background rectangle/.style={
+          draw=mygreen,
+          fill=bgcolor,
+          rounded corners=4pt,
+        },
+      font=\small,
+    },
+}
 % end quiver
 \usepackage[all, pdf]{xy}
 \usepackage{imakeidx}
 \makeindex[
-	intoc=true,
-	columns=1
+  intoc=true,
+  columns=1
 ]
 \usepackage{nameref}
 \usepackage[bookmarksopen=true]{hyperref}
@@ -77,21 +113,29 @@
 \tcbuselibrary{skins}
 \tcbuselibrary{breakable}
 \newtcolorbox{kk}[2][]{
-	enhanced,
-	boxed title size=copy,
-	left=4pt,
-	right=4pt,
-	before skip=6pt,
-	after skip=8pt,
-	arc=0pt,
-	boxrule=.5pt, % border
-	coltitle=white, % 标题颜色
-	colbacktitle=mygreen, % 标题框背景色
-	colframe=mygreen, % 线框颜色
-	colback=white, % 框背景色
-	% fonttitle=\bfseries,
-	attach boxed title to top left,
-	title={#2},#1}
+  % padding left/right
+  left=4pt,
+  right=4pt,
+  % margin top/botom
+  before skip=6pt,
+  after skip=8pt,
+  % 圆角
+  arc=4pt,
+  sharp corners=northwest,
+  boxrule=.5pt, % border
+  colframe=mygreen, % 线框颜色
+  colback=mygreen!5, % 框背景色
+  drop lifted shadow,
+  % 标题
+  enhanced, % 显示
+  boxed title size=copy, % 大小
+  lefttitle=4pt, % padding left
+  coltitle=white, % 标题颜色
+  colbacktitle=mygreen, % 标题框背景色
+  % fonttitle=\bfseries,
+  boxed title style={arc=0pt},
+  attach boxed title to top left,
+  title={#2}, #1}
 \usepackage[inline]{enumitem}
 \setlist{nosep}
 % \setlist[enumerate, 3]{label=(\arabic*), ref=\theenumii.(\arabic*)}
@@ -134,25 +178,25 @@
 \newcommand\san{\qd{③}.} %
 \newcommand\si{\qd{④}.} %
 \newcommand\info[2]{
-	\hypersetup{
-		colorlinks,
-		% bookmarksnumbered,
-		pdftitle={#1},
-		pdfauthor={小兑},
-		pdfsubject={法考 #1},
-		pdfkeywords={法考 #1}
-	}
-	\title{#1}
-	\author{ecuplxd}
-	\date{#2}
+  \hypersetup{
+    colorlinks,
+    % bookmarksnumbered,
+    pdftitle={#1},
+    pdfauthor={小兑},
+    pdfsubject={法考 #1},
+    pdfkeywords={法考 #1}
+  }
+  \title{#1}
+  \author{ecuplxd}
+  \date{#2}
 }
 \makeatletter
 \newcommand{\DrawLine}{%
   \begin{tikzpicture}
-  \path[use as bounding box] (0,0) -- (\linewidth, 0);
-  \draw[color=mygreen, dashed, dash phase=2pt]
-        (0 - \kvtcb@leftlower - \kvtcb@boxsep, 0)--
-        (\linewidth + \kvtcb@rightlower + \kvtcb@boxsep, 0);
+    \path[use as bounding box] (0,0) -- (\linewidth, 0);
+    \draw[color=mygreen, dashed, dash phase=2pt]
+    (0 - \kvtcb@leftlower - \kvtcb@boxsep, 0)--
+    (\linewidth + \kvtcb@rightlower + \kvtcb@boxsep, 0);
   \end{tikzpicture}%
-  }
+}
 \makeatother
