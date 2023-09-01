@@ -21,47 +21,56 @@
 \newCJKfontfamily\dahei{Source Han Sans CN Medium} % 大黑
 \newCJKfontfamily\cuhei{Source Han Sans CN Bold} % 粗黑
 \newCJKfontfamily\fangsong{FZFangSong-Z02}
-\newCJKfontfamily\kaiti{FZKai-Z03}
+\newCJKfontfamily\kaishu{FZKai-Z03}
+
+\usepackage{zhlineskip}
+% 版式、布局
 \usepackage{layout}
 \usepackage[a4paper, twoside=false, includemp]{geometry}
+\usepackage{paracol}
 \geometry{left=1cm, right=0.1cm, bottom=1.6cm, top=1.6cm, marginparwidth=36pt}
 \usepackage[notindex]{tocbibind}
 \usepackage{xcolor}
 \definecolor{mygreen}{RGB}{3,143,94}
 \colorlet{bgcolor}{mygreen!5}
-\usepackage{zhlineskip}
+% 插图
+\usepackage{graphicx}
+% 表格
 \usepackage{multirow}
 \usepackage{makecell}
-\usepackage{graphicx}
+% 数学
 \usepackage{amsmath}
+% tikz
 \usepackage[edges]{forest}
 \forestset{
-  default preamble={tikz+={\tikzset{
-    show background rectangle,
-    background rectangle/.style={draw=mygreen}
-  }}},
-  my tree/.style={
-      for tree={
-          grow'=east,
-          forked edge,
-          edge={line, mygreen},
-          thick,
-          draw=mygreen,
-          fill=bgcolor,
-          rounded corners=4pt,
-          font=\small,
-        }
-    }
+default preamble={tikz+={\tikzset{
+  show background rectangle,
+  background rectangle/.style={draw=mygreen}
+}}},
+my tree/.style={
+    for tree={
+        grow'=east,
+        forked edge,
+        edge={line, mygreen},
+        thick,
+        draw=mygreen,
+        fill=bgcolor,
+        rounded corners=4pt,
+        font=\small,
+      }
+  }
 }
 \usepackage{tikz}
 % quiver
 \usepackage{tikz-cd}
 \usepackage{amssymb}
-\usetikzlibrary{arrows.meta, backgrounds}
-\usetikzlibrary{calc}
-\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{
+  arrows.meta,
+  backgrounds,
+  calc,
+  decorations.pathmorphing,
+}
 \tikzset{line/.style={draw, -Stealth}}
-% \tikzset{line/.style={draw, -{Circle[open]}}}
 \tikzset{
   curve/.style={
       settings={#1},
@@ -98,17 +107,28 @@
       font=\small,
     },
 }
-% end quiver
 \usepackage[all, pdf]{xy}
+% end quiver
+
+% 交叉引用等
+\usepackage{xstring}
+\usepackage{nameref}
 \usepackage{imakeidx}
 \makeindex[
   intoc=true,
-  columns=1
+  columns=3
 ]
-\usepackage{nameref}
-\usepackage[bookmarksopen=true]{hyperref}
-\usepackage{bookmark}
-\usepackage{paracol}
+\newcommand\kw[1]{%
+  \StrBefore{#1}{@}[\temp]%
+  \StrBehind{#1}{@}[\tempp]%
+  \IfSubStr{#1}{@}{\temp\index{\tempp!\temp}}{#1\index{#1}}%
+}
+% \newcommand\kw[1]{#1\index{#1}}
+\newcommand\kwn[1]{\index{#1}}
+
+% \newcommand\bq[1]{{#1}\label{#1}\index{#1}} % 标签
+% \newcommand\yy[1]{{#1}\ref{#1}} % 引用
+% \newcommand\tz[1]{\hyperref[#1]{#1}} % 跳转
 \usepackage{tcolorbox}
 \tcbuselibrary{skins}
 \tcbuselibrary{breakable}
@@ -124,7 +144,7 @@
   sharp corners=northwest,
   boxrule=.5pt, % border
   colframe=mygreen, % 线框颜色
-  colback=mygreen!5, % 框背景色
+  colback=bgcolor, % 框背景色
   drop lifted shadow,
   % 标题
   enhanced, % 显示
@@ -136,27 +156,22 @@
   boxed title style={arc=0pt},
   attach boxed title to top left,
   title={#2}, #1}
+% 列表
 \usepackage[inline]{enumitem}
 \setlist{nosep}
 % \setlist[enumerate, 3]{label=(\arabic*), ref=\theenumii.(\arabic*)}
 % \setlist[itemize, 1]{label=$\ast$}
+
 \usepackage{xeCJKfntef}
 \newcommand\xhx[1]{\CJKunderline*{#1}} % 下划线
 \newcommand\scx[1]{\CJKsout*{#1}} % 删除线
-
 \setlength{\fboxsep}{1pt}
 \newcommand\hzi[1]{\textcolor{magenta}{#1}}
-\newcommand\hs[1]{\textcolor{red}{#1}}
 \newcommand\zd[1]{\CJKunderline*[textformat=\color{mygreen}]{#1}} % 带下划线的重点
-\newcommand\bs[1]{\CJKunderline*[textformat=\kaiti\color{red}]{#1}} % 容易忽略的知识点，背诵
+\newcommand\bs[1]{\CJKunderline*[textformat=\kaishu\color{red}]{#1}} % 容易忽略的知识点，背诵
 \newcommand\qd[1]{\textcolor{mygreen}{#1}} % 强调
-\newcommand\al[1]{\hzi{\fangsong{#1}}} % 案例 不用 texttt
-\newcommand\ft[1]{\hzi{\fangsong{#1}}} % 法条
-
-\newcommand\sy[1]{{#1}\index{#1}} % 索引
-\newcommand\bq[1]{{#1}\label{#1}\index{#1}} % 标签
-\newcommand\yy[1]{{#1}\ref{#1}} % 引用
-\newcommand\tz[1]{\hyperref[#1]{#1}} % 跳转
+\newcommand\al[1]{\hzi{\fangsong{#1}}} % 案例 不能用 texttt
+% \newcommand\ft[1]{\hzi{\fangsong{#1}}} % 法条
 
 \newcommand\yjt{\textbf{→} } % 右箭头
 \newcommand\zyjt{↔} % 左右箭头
@@ -177,6 +192,9 @@
 \newcommand\er{\qd{②}.} %
 \newcommand\san{\qd{③}.} %
 \newcommand\si{\qd{④}.} %
+
+\usepackage[bookmarksopen=true, backref]{hyperref}
+\usepackage{bookmark} % 有顺序要求
 \newcommand\info[2]{
   \hypersetup{
     colorlinks,
@@ -190,6 +208,7 @@
   \author{ecuplxd}
   \date{#2}
 }
+
 \makeatletter
 \newcommand{\DrawLine}{%
   \begin{tikzpicture}
