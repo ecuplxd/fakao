@@ -31,7 +31,7 @@
 \geometry{left=1cm, right=0.1cm, bottom=1.6cm, top=1.6cm, marginparwidth=36pt}
 \usepackage[notindex]{tocbibind}
 \usepackage{xcolor}
-\definecolor{mygreen}{RGB}{3,143,94}
+\definecolor{mygreen}{HTML}{038f5e}
 \colorlet{bgcolor}{mygreen!5}
 % 插图
 \usepackage{graphicx}
@@ -160,6 +160,12 @@ my tree/.style={
 % 列表
 \usepackage[inline]{enumitem}
 \setlist{nosep}
+% \setlist{
+%   topsep = 0pt,
+%   partopsep = 0pt,
+%   parsep = 0.5pt,
+%   itemsep = 0.5pt,
+% }
 % \setlist[enumerate, 3]{label=(\arabic*), ref=\theenumii.(\arabic*)}
 % \setlist[itemize, 1]{label=$\ast$}
 
@@ -170,6 +176,7 @@ my tree/.style={
 \newcommand\hzi[1]{\textcolor{magenta}{#1}}
 \newcommand\zd[1]{\CJKunderline*[textformat=\color{mygreen}]{#1}} % 带下划线的重点
 \newcommand\bs[1]{\CJKunderline*[textformat=\kaishu\color{red}]{#1}} % 容易忽略的知识点，背诵
+\newcommand\zx[1]{\CJKunderline*[textformat=\kaishu\color{blue!80}]{#1}} % 最新做题，错的
 \newcommand\qd[1]{\textcolor{mygreen}{#1}} % 强调
 \newcommand\al[1]{\hzi{\fangsong{#1}}} % 案例 不能用 texttt
 % \newcommand\ft[1]{\hzi{\fangsong{#1}}} % 法条
