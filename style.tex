@@ -26,7 +26,7 @@
 \usepackage{zhlineskip}
 % 版式、布局
 \usepackage{layout}
-\usepackage[a4paper, twoside=false, includemp]{geometry}
+\usepackage[a4paper, twoside=false, includemp, showframe]{geometry}
 \usepackage{paracol}
 \geometry{left=1cm, right=0.1cm, bottom=1.6cm, top=1.6cm, marginparwidth=36pt}
 \usepackage[notindex]{tocbibind}
@@ -174,9 +174,10 @@ my tree/.style={
 \newcommand\scx[1]{\CJKsout*{#1}} % 删除线
 \setlength{\fboxsep}{1pt}
 \newcommand\hzi[1]{\textcolor{magenta}{#1}}
-\newcommand\zd[1]{\CJKunderline*[textformat=\color{mygreen}]{#1}} % 带下划线的重点
-\newcommand\bs[1]{\CJKunderline*[textformat=\kaishu\color{red}]{#1}} % 容易忽略的知识点，背诵
-\newcommand\zx[1]{\CJKunderline*[textformat=\kaishu\color{blue!80}]{#1}} % 最新做题，错的
+\newcommand\mkg[1]{\colorbox{magenta!20}{#1}} % 印象里没考过这个知识点
+\newcommand\zd[1]{\CJKunderline*[textformat=\color{mygreen}]{#1}} % 关键字
+\newcommand\bs[1]{\CJKunderline*[textformat=\kaishu\color{red}]{#1}} % 容易忽略的
+\newcommand\zx[1]{\CJKunderline*[textformat=\color{blue!80}]{#1}} % 要背的
 \newcommand\qd[1]{\textcolor{mygreen}{#1}} % 强调
 \newcommand\al[1]{\hzi{\fangsong{#1}}} % 案例 不能用 texttt
 % \newcommand\ft[1]{\hzi{\fangsong{#1}}} % 法条
@@ -193,9 +194,8 @@ my tree/.style={
 \newcommand\dydy{≥ } % 大于等于
 \newcommand\xydy{≤ } % 小于等于
 \newcommand\hz{|| } % 或者
-\newcommand\cuo{× } % 错
-\newcommand\dui{√ } % 对
-
+\newcommand\cuo[1][]{\IfStrEq{#1}{}{×}{× #1}} % 错
+\newcommand\dui[1][]{\IfStrEq{#1}{}{√}{√ #1}} % 对
 \newcommand\yi{\qd{①}.} % 圆圈 1 - 4
 \newcommand\er{\qd{②}.} %
 \newcommand\san{\qd{③}.} %
