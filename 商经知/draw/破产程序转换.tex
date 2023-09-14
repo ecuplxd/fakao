@@ -1,20 +1,17 @@
+% https://q.uiver.app/#q=WzAsNyxbMSwwLCLlgLrmnYPkurogfHwg5YC65Yqh5Lq6Il0sWzEsMSwi5riF566XIl0sWzAsMSwi5ri45oiP57uT5p2fIl0sWzMsMSwi5ZKM6KejIl0sWzQsMSwi5YC65Yqh5Lq6Il0sWzIsMiwi6YeN5pW0Il0sWzIsMywi5YC65Yqh5Lq6Il0sWzAsMV0sWzEsMl0sWzEsMywi5YC65Yqh5Lq6ICsg5ZKM6Kej5Y2P6K6uIiwwLHsib2Zmc2V0IjotMX1dLFs0LDNdLFsxLDUsIuWAuuWKoeS6uiB8fCDlh7rotYTljaAgMS8xMCDlh7rotYTkuroiLDMseyJvZmZzZXQiOi0xfV0sWzYsNV0sWzMsMSwi5aSx6LSlIiwwLHsib2Zmc2V0IjotMX1dLFs1LDEsIuWksei0pSIsMyx7Im9mZnNldCI6LTF9XV0=
 \[
-  \begin{tikzcd}[mytest, row sep=large]
-    & \txt{债权人 \hz 债务人} \\
-    \txt{游戏结束} & \txt{清算} &&&&&& \txt{和解} & \txt{债务人} \\
-    \\
-    \\
-    \\
-    &&&& \txt{重整} \\
-    &&&& \txt{债务人}
-    \arrow["\txt{债务人 + 和解协议}", shift left=1, from=2-2, to=2-8]
-    \arrow["\txt{债务人 \hz 出资占 1/10 出资人\\\\\\}"{marking}, shift left=1, from=2-2, to=6-5]
-    % \arrow["\txt{债务人 + 和解协议\\\\\\}"{marking}, from=6-5, to=2-8]
-    \arrow["\txt{失败}", shift left=1, from=6-5, to=2-2]
-    \arrow["\txt{失败}", shift left=1, from=2-8, to=2-2]
-    \arrow[shift right=1, from=7-5, to=6-5]
-    \arrow[from=2-9, to=2-8]
-    \arrow[shift right=1, from=1-2, to=2-2]
-    \arrow[shift right=1, from=2-2, to=2-1]
+  \begin{tikzcd}[mytest]
+    & \txt{债权人 || 债务人} \\
+    \txt{游戏结束} & \txt{清算} && \txt{和解} & \txt{债务人} \\[18ex]
+    && \txt{重整} \\
+    && \txt{债务人}
+    \arrow[from=1-2, to=2-2]
+    \arrow[from=2-2, to=2-1]
+    \arrow["\txt{债务人 + 和解协议}", shift left, from=2-2, to=2-4]
+    \arrow[from=2-5, to=2-4]
+    \arrow["\txt{债务人 || 出资占 1/10 出资人\\\\\\}"{marking}, shift left, from=2-2, to=3-3]
+    \arrow[from=4-3, to=3-3]
+    \arrow["\txt{失败}", shift left, from=2-4, to=2-2]
+    \arrow["\txt{\\\\失败}"{marking}, shift left, from=3-3, to=2-2]
   \end{tikzcd}
 \]
