@@ -4,3 +4,8 @@ main.*
 *.log
 dist
 *.mp3
+*.xdv
+*.gz
+*.idx
+*.ilg
+*.ind
