@@ -1,15 +1,14 @@
-
 import os
 import unicodedata
 import shutil
 import PyPDF2
 import edge_tts
 import asyncio
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, wait
+import json
 
-executor = ThreadPoolExecutor(20)
+pool = ThreadPoolExecutor(50)
 subjects = ['刑法', '刑诉', '民法', '民诉', '行政法', '商经知', '三国法', '理论法']
-# subjects = ['三国法']
 sections = [
     '法的本体',
     '法的运行',
@@ -30,7 +29,7 @@ sections = [
     '律师制度和律师职业道德',
     '法律援助和公证制度',
 ]
-voice = 'zh-CN-YunyangNeural'
+voice = 'zh-CN-YunxiNeural'
 rate = '+0%'
 volume = '+0%'
 cwd = os.getcwd()
@@ -53,18 +52,33 @@ def to_tts(pdf_path):
     for i in range(page_number):
         page_obj = pdf_reader.pages[i]
         text = text + page_obj.extract_text()
+        text = text.replace('×', '错')
+        text = text.replace('√', '对')
     asyncio.run(my_function(pdf_path, text))
 
 
 def create_each_file(dist, file, lines):
     if file != "main.tex":
         output = os.path.join(dist, '_' + file)
+        lines = lines.replace('section{', 'section*{')
+        lines = lines.replace('\input{..', '% \input{..')
+        lines = lines.replace('\hz', '.或.')
+        lines = lines.replace('\dy ', '.大于.')
+        lines = lines.replace('\\xyh', '.小于.')
+        # lines = lines.replace('\dui', '.对.')
+        # lines = lines.replace('\cuo', '.错.')
+        lines = lines.replace('\yjt', '，')
+        lines = lines.replace('\sjt', '.以上.')
+        lines = lines.replace('\\xjt', '.以下.')
         with open(output, encoding='utf-8', mode='w+') as f_full:
-            full_code = '''\input{../../style.tex}
+            full_code = '''
+\input{../../style.tex}
+\geometry{landscape}
 \pagestyle{empty}
 \\begin{document}
 %s
-\end{document}''' % (lines.replace('section{', 'section*{'))
+\end{document}
+''' % (lines)
             f_full.write(full_code)
             return output
 
@@ -77,10 +91,9 @@ def compile_tex(tex_file):
 
 
 def create_main(name, sections):
-    code = '''\input{../style.tex}
-\\title{%s}
-\\author{ecuplxd}
-\date{\\today}
+    code = '''
+\input{../style.tex}
+\\info{%s}{\\today}
 \\begin{document}
 \maketitle
 \\tableofcontents
@@ -144,9 +157,7 @@ def add_comma():
 def merge():
     code = [
         '''\include{../style.tex}
-\\title{法考}
-\\author{ecuplxd}
-\date{\\today}
+\\info{法考}{\\today}
 \\begin{document}
 \maketitle
 \\tableofcontents
@@ -181,23 +192,18 @@ def merge():
     with open('dist/main.tex', encoding='utf-8', mode='w+') as f:
         f.writelines(code)
 
-    for output in outputs:
-        if not output:
-            continue
-        executor.submit(compile_tex, output)
+    all_compile_job = [pool.submit(compile_tex, output)
+                       for output in outputs if output]
+    wait(all_compile_job)
 
 
 def clean_up():
+    os.chdir(cwd)
     for root, dirs, files in os.walk('./dist'):
-        if dirs == ['draw']:
-            os.removedirs(os.path.join(root, 'draw'))
-            continue
-
         for f in files:
             f_path = os.path.join(root, f)
 
             if '.pdf' in f:
-                os.rename(f_path, f_path.replace('_', ''))
                 continue
             if '.mp3' in f:
                 continue
@@ -207,7 +213,19 @@ def clean_up():
                 os.remove(f_path)
 
 
+def get_law_list():
+    with open('./法条.json', 'r', encoding='utf8') as fp:
+        json_data = json.load(fp)
+        laws = json_data['data']
+        for law in laws:
+            print(law['title'])
+            for sublaw in law['children']:
+                print('  ' + sublaw['title'])
+
+
 if __name__ == "__main__":
     # merge()
-    # executor.shutdown()
-    clean_up()
+    # clean_up()
+    [pool.submit(to_tts, './dist/民诉/' + file) for file in os.listdir('./dist/民诉')
+     if '.pdf' in file and 'main' not in file]
+    pool.shutdown()  # 不能少
