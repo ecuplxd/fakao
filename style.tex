@@ -120,17 +120,7 @@ my tree/.style={
   intoc=true,
   columns=3
 ]
-\newcommand\kw[1]{%
-  \StrBefore{#1}{@}[\temp]%
-  \StrBehind{#1}{@}[\tempp]%
-  \IfSubStr{#1}{@}{\temp\index{\tempp!\temp}}{#1\index{#1}}%
-}
-% \newcommand\kw[1]{#1\index{#1}}
-\newcommand\kwn[1]{\index{#1}}
 
-% \newcommand\bq[1]{{#1}\label{#1}\index{#1}} % 标签
-% \newcommand\yy[1]{{#1}\ref{#1}} % 引用
-% \newcommand\tz[1]{\hyperref[#1]{#1}} % 跳转
 \usepackage{tcolorbox}
 \tcbuselibrary{skins}
 \tcbuselibrary{breakable}
@@ -175,32 +165,29 @@ my tree/.style={
 \newcommand\scx[1]{\CJKsout*{#1}} % 删除线
 \setlength{\fboxsep}{1pt}
 \newcommand\hzi[1]{\textcolor{magenta}{#1}}
-\newcommand\mkg[1]{\colorbox{magenta!20}{#1}} % 印象里没考过这个知识点
-\newcommand\zd[1]{\CJKunderline*[textformat=\color{mygreen}]{#1}} % 关键字
-\newcommand\bs[1]{\CJKunderline*[textformat=\kaishu\color{red}]{#1}} % 容易忽略的
-\newcommand\zx[1]{\CJKunderline*[textformat=\color{blue!80}]{#1}} % 要背的
-\newcommand\qd[1]{\textcolor{mygreen}{#1}} % 强调
+\newcommand\zd[1]{\CJKunderline*[textformat=\color{mygreen}]{#1}}
+\newcommand\bs[1]{\CJKunderline*[textformat=\kaishu\color{red}]{#1}}
+\newcommand\zx[1]{\CJKunderline*[textformat=\color{blue!80}]{#1}}
 \newcommand\al[1]{\hzi{\fangsong{#1}}} % 案例 不能用 texttt
-% \newcommand\ft[1]{\hzi{\fangsong{#1}}} % 法条
 
 \newcommand\yjt{\textbf{→} } % 右箭头
 \newcommand\zyjt{↔} % 左右箭头
 \newcommand\sjt{\raisebox{0.2ex}{\textbf{↑}}\,} % 上箭头
 \newcommand\xjt{\textbf{↓}\,} % 下箭头
 \newcommand\blh{\textasciitilde} % 波浪号
-\newcommand\dy{＞ } % 大于
-\newcommand\xyh{＜ } % 小于
-\newcommand\ydy{≈ } % 约等于
-\newcommand\bdy{≠ } % 不等于
-\newcommand\dydy{≥ } % 大于等于
-\newcommand\xydy{≤ } % 小于等于
-\newcommand\hz{|| } % 或者
+\newcommand\dy{＞} % 大于
+\newcommand\xyh{＜} % 小于
+\newcommand\ydy{≈} % 约等于
+\newcommand\bdy{≠} % 不等于
+\newcommand\dydy{≥} % 大于等于
+\newcommand\xydy{≤} % 小于等于
+\newcommand\hz{||} % 或者
 \newcommand\cuo[1][]{\IfStrEq{#1}{}{×}{× #1}} % 错
 \newcommand\dui[1][]{\IfStrEq{#1}{}{√}{√ #1}} % 对
-\newcommand\yi{\qd{①}.} % 圆圈 1 - 4
-\newcommand\er{\qd{②}.} %
-\newcommand\san{\qd{③}.} %
-\newcommand\si{\qd{④}.} %
+\newcommand\yi{①.} % 圆圈 1 - 4
+\newcommand\er{②.} %
+\newcommand\san{③.} %
+\newcommand\si{④.} %
 
 \usepackage[bookmarksopen=true, backref]{hyperref}
 \usepackage{bookmark} % 有顺序要求
@@ -217,14 +204,3 @@ my tree/.style={
   \author{ecuplxd}
   \date{#2}
 }
-
-\makeatletter
-\newcommand{\DrawLine}{%
-  \begin{tikzpicture}
-    \path[use as bounding box] (0,0) -- (\linewidth, 0);
-    \draw[color=mygreen, dashed, dash phase=2pt]
-    (0 - \kvtcb@leftlower - \kvtcb@boxsep, 0)--
-    (\linewidth + \kvtcb@rightlower + \kvtcb@boxsep, 0);
-  \end{tikzpicture}%
-}
-\makeatother

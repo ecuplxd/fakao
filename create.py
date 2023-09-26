@@ -151,6 +151,7 @@ def add_comma():
                         lines[i] = line + '。'
 
                 f.seek(0)
+                f.truncate()
                 f.writelines('\n'.join(lines) + '\n')
 
 
@@ -177,6 +178,7 @@ def merge():
                 lines = ''.join(f.readlines())
                 lines = lines.replace('draw/', '../' + subject + '/draw/')
                 f.seek(0)
+                f.truncate()
                 f.writelines(lines)
                 outputs.append(create_each_file(dist, file, lines))
 
