@@ -62,18 +62,20 @@ def create_each_file(dist, file, lines):
         output = os.path.join(dist, '_' + file)
         lines = lines.replace('section{', 'section*{')
         lines = lines.replace('\input{..', '% \input{..')
-        lines = lines.replace('\hz', '.或.')
-        lines = lines.replace('\dy ', '.大于.')
-        lines = lines.replace('\\xyh', '.小于.')
+        # lines = lines.replace('\hz', '.或.')
+        # lines = lines.replace('\dy ', '.大于.')
+        # lines = lines.replace('\\xyh', '.小于.')
         # lines = lines.replace('\dui', '.对.')
         # lines = lines.replace('\cuo', '.错.')
-        lines = lines.replace('\yjt', '，')
-        lines = lines.replace('\sjt', '.以上.')
-        lines = lines.replace('\\xjt', '.以下.')
+        # lines = lines.replace('\yjt', '，')
+        # lines = lines.replace('\sjt', '.以上.')
+        # lines = lines.replace('\\xjt', '.以下.')
         with open(output, encoding='utf-8', mode='w+') as f_full:
             full_code = '''
 \input{../../style.tex}
 \geometry{landscape}
+\geometry{left=0cm, right=0cm, bottom=0cm, top=0cm}
+\geometry{a2paper}
 \pagestyle{empty}
 \\begin{document}
 %s
@@ -174,6 +176,7 @@ def merge():
         files = filter_tex_file(dist)
 
         for file in files:
+            print(file)
             with open(os.path.join(dist, file), encoding='utf-8', mode='r+') as f:
                 lines = ''.join(f.readlines())
                 lines = lines.replace('draw/', '../' + subject + '/draw/')
@@ -226,8 +229,8 @@ def get_law_list():
 
 
 if __name__ == "__main__":
-    # merge()
-    # clean_up()
-    [pool.submit(to_tts, './dist/民诉/' + file) for file in os.listdir('./dist/民诉')
-     if '.pdf' in file and 'main' not in file]
-    pool.shutdown()  # 不能少
+    merge()
+    clean_up()
+    # [pool.submit(to_tts, './dist/民诉/' + file) for file in os.listdir('./dist/民诉')
+    #  if '.pdf' in file and 'main' not in file]
+    # pool.shutdown()  # 不能少
