@@ -9,3 +9,6 @@ dist
 *.idx
 *.ilg
 *.ind
+__pycache__
+site*
+.fakao*
